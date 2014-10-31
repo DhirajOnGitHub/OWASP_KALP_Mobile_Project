@@ -1,0 +1,3630 @@
+android.support.v4.app.ActivityCompatHoneycomb -> android.support.v4.app.a:
+    void invalidateOptionsMenu(android.app.Activity) -> a
+android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void dump(java.lang.String,java.io.PrintWriter,boolean) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
+    void bumpBackStackNesting(int) -> a
+    int commit() -> a
+    int commitInternal(boolean) -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> b
+    java.lang.String getName() -> b
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.c:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.d:
+    android.support.v4.app.BackStackState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.BackStackState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> P
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    android.support.v4.app.FragmentManagerImpl mChildFragmentManager -> u
+    android.support.v4.app.Fragment mParentFragment -> v
+    int mFragmentId -> w
+    int mContainerId -> x
+    java.lang.String mTag -> y
+    boolean mHidden -> z
+    boolean mDetached -> A
+    boolean mRetainInstance -> B
+    boolean mRetaining -> C
+    boolean mHasMenu -> D
+    boolean mMenuVisible -> E
+    boolean mCalled -> F
+    int mNextAnim -> G
+    android.view.ViewGroup mContainer -> H
+    android.view.View mView -> I
+    android.view.View mInnerView -> J
+    boolean mDeferStart -> K
+    boolean mUserVisibleHint -> L
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> M
+    boolean mLoadersStarted -> N
+    boolean mCheckedForLoaderManager -> O
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState(android.os.Bundle) -> a
+    void setIndex(int,android.support.v4.app.Fragment) -> a
+    boolean isInBackStack() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    android.support.v4.app.FragmentActivity getActivity() -> b
+    android.content.res.Resources getResources() -> c
+    boolean isDetached() -> d
+    void onHiddenChanged(boolean) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
+    void onInflate(android.app.Activity,android.util.AttributeSet,android.os.Bundle) -> a
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation(int,boolean,int) -> a
+    void onCreate(android.os.Bundle) -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> d
+    void onViewStateRestored(android.os.Bundle) -> e
+    void onStart() -> e
+    void onResume() -> f
+    void onSaveInstanceState(android.os.Bundle) -> f
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onPause() -> g
+    void onStop() -> h
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> i
+    void onDestroy() -> j
+    void initState() -> k
+    void onDetach() -> l
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    void onPrepareOptionsMenu(android.view.Menu) -> a
+    void onDestroyOptionsMenu() -> m
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onOptionsMenuClosed(android.view.Menu) -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void instantiateChildFragmentManager() -> n
+    void performCreate(android.os.Bundle) -> g
+    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> b
+    void performActivityCreated(android.os.Bundle) -> h
+    void performStart() -> o
+    void performResume() -> p
+    void performConfigurationChanged(android.content.res.Configuration) -> a
+    void performLowMemory() -> q
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> b
+    boolean performPrepareOptionsMenu(android.view.Menu) -> c
+    boolean performOptionsItemSelected(android.view.MenuItem) -> c
+    boolean performContextItemSelected(android.view.MenuItem) -> d
+    void performOptionsMenuClosed(android.view.Menu) -> d
+    void performSaveInstanceState(android.os.Bundle) -> i
+    void performPause() -> r
+    void performStop() -> s
+    void performReallyStop() -> t
+    void performDestroyView() -> u
+    void performDestroy() -> v
+android.support.v4.app.Fragment$1 -> android.support.v4.app.e:
+    android.support.v4.app.Fragment this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.f:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.g:
+    android.support.v4.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.Fragment$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.h:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    android.support.v4.app.FragmentContainer mContainer -> c
+    boolean mCreated -> d
+    boolean mResumed -> e
+    boolean mStopped -> f
+    boolean mReallyStopped -> g
+    boolean mRetaining -> h
+    boolean mOptionsMenuInvalidated -> i
+    boolean mCheckedForLoaderManager -> j
+    boolean mLoadersStarted -> k
+    java.util.HashMap mAllLoaderManagers -> l
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> m
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    java.lang.Object onRetainCustomNonConfigurationInstance() -> b
+    void supportInvalidateOptionsMenu() -> c
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    java.lang.String viewToString(android.view.View) -> a
+    void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
+    void doReallyStop(boolean) -> a
+    void onReallyStop() -> d
+    void onAttachFragment(android.support.v4.app.Fragment) -> a
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragment(java.lang.String) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(java.lang.String,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.i:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.j:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    java.util.HashMap loaders -> e
+android.support.v4.app.FragmentContainer -> android.support.v4.app.k:
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentManager -> android.support.v4.app.l:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+android.support.v4.app.FragmentManager$OnBackStackChangedListener -> android.support.v4.app.m:
+    void onBackStackChanged() -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.n:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    android.support.v4.app.FragmentContainer mContainer -> p
+    android.support.v4.app.Fragment mParent -> q
+    boolean mNeedMenuInvalidate -> r
+    boolean mStateSaved -> s
+    boolean mDestroyed -> t
+    java.lang.String mNoTransactionsBecause -> u
+    boolean mHavePendingDeferredStart -> v
+    android.os.Bundle mStateBundle -> w
+    android.util.SparseArray mStateArray -> x
+    java.lang.Runnable mExecCommit -> y
+    android.view.animation.Interpolator DECELERATE_QUINT -> z
+    android.view.animation.Interpolator DECELERATE_CUBIC -> A
+    android.view.animation.Interpolator ACCELERATE_QUINT -> B
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> C
+    void throwException(java.lang.RuntimeException) -> a
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    boolean popBackStackImmediate() -> c
+    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation(android.content.Context,float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation(android.content.Context,float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void performPendingDeferredStart(android.support.v4.app.Fragment) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> b
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> d
+    void makeActive(android.support.v4.app.Fragment) -> c
+    void makeInactive(android.support.v4.app.Fragment) -> d
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> t
+    void enqueueAction(java.lang.Runnable,boolean) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> e
+    void reportBackStackChanged() -> f
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    boolean popBackStackState(android.os.Handler,java.lang.String,int,int) -> a
+    java.util.ArrayList retainNonConfig() -> g
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> e
+    android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> f
+    android.os.Parcelable saveAllState() -> h
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
+    void noteStateNotSaved() -> i
+    void dispatchCreate() -> j
+    void dispatchActivityCreated() -> k
+    void dispatchStart() -> l
+    void dispatchResume() -> m
+    void dispatchPause() -> n
+    void dispatchStop() -> o
+    void dispatchReallyStop() -> p
+    void dispatchDestroyView() -> q
+    void dispatchDestroy() -> r
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> s
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+    int transitToStyleIndex(int,boolean) -> b
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.o:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.p:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.q:
+    android.support.v4.app.FragmentManagerState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentManagerState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.r:
+    android.support.v4.app.FragmentState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost -> android.support.v4.app.FragmentTabHost:
+    java.util.ArrayList mTabs -> a
+    android.content.Context mContext -> b
+    android.support.v4.app.FragmentManager mFragmentManager -> c
+    int mContainerId -> d
+    android.widget.TabHost$OnTabChangeListener mOnTabChangeListener -> e
+    android.support.v4.app.FragmentTabHost$TabInfo mLastTab -> f
+    boolean mAttached -> g
+    void setup() -> setup
+    void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener) -> setOnTabChangedListener
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void onTabChanged(java.lang.String) -> onTabChanged
+    android.support.v4.app.FragmentTransaction doTabChanged(java.lang.String,android.support.v4.app.FragmentTransaction) -> a
+android.support.v4.app.FragmentTabHost$1 -> android.support.v4.app.s:
+android.support.v4.app.FragmentTabHost$SavedState -> android.support.v4.app.FragmentTabHost$SavedState:
+    java.lang.String curTab -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.app.FragmentTabHost$SavedState$1 -> android.support.v4.app.t:
+    android.support.v4.app.FragmentTabHost$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentTabHost$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost$TabInfo -> android.support.v4.app.u:
+    java.lang.String tag -> a
+    java.lang.Class clss -> b
+    android.os.Bundle args -> c
+    android.support.v4.app.Fragment fragment -> d
+    android.support.v4.app.Fragment access$102(android.support.v4.app.FragmentTabHost$TabInfo,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment access$100(android.support.v4.app.FragmentTabHost$TabInfo) -> a
+    java.lang.String access$200(android.support.v4.app.FragmentTabHost$TabInfo) -> b
+    java.lang.Class access$300(android.support.v4.app.FragmentTabHost$TabInfo) -> c
+    android.os.Bundle access$400(android.support.v4.app.FragmentTabHost$TabInfo) -> d
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.v:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
+    int commit() -> a
+android.support.v4.app.LoaderManager -> android.support.v4.app.w:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.x:
+    android.support.v4.content.Loader onCreateLoader(int,android.os.Bundle) -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset(android.support.v4.content.Loader) -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.y:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    java.lang.String mWho -> d
+    android.support.v4.app.FragmentActivity mActivity -> e
+    boolean mStarted -> f
+    boolean mRetaining -> g
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.z:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void start() -> a
+    void retain() -> b
+    void finishRetain() -> c
+    void reportStart() -> d
+    void stop() -> e
+    void destroy() -> f
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.aa:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.ab:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void onStartLoading() -> b
+    void stopLoading() -> c
+    void onStopLoading() -> d
+    void reset() -> e
+    void onReset() -> f
+    java.lang.String dataToString(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub -> android.support.v4.b.e:
+    android.os.Parcelable$Creator instantiate(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    void gc() -> c
+    int size() -> a
+    int keyAt(int) -> a
+    java.lang.Object valueAt(int) -> b
+    void clear() -> b
+    int idealByteArraySize(int) -> c
+    int idealIntArraySize(int) -> d
+android.support.v4.view.GravityCompat -> android.support.v4.view.a:
+    android.support.v4.view.GravityCompat$GravityCompatImpl IMPL -> a
+    int getAbsoluteGravity(int,int) -> a
+android.support.v4.view.GravityCompat$GravityCompatImpl -> android.support.v4.view.b:
+    int getAbsoluteGravity(int,int) -> a
+android.support.v4.view.GravityCompat$GravityCompatImplBase -> android.support.v4.view.c:
+    int getAbsoluteGravity(int,int) -> a
+android.support.v4.view.GravityCompat$GravityCompatImplJellybeanMr1 -> android.support.v4.view.d:
+    int getAbsoluteGravity(int,int) -> a
+android.support.v4.view.GravityCompatJellybeanMr1 -> android.support.v4.view.e:
+    int getAbsoluteGravity(int,int) -> a
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.f:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers(android.view.KeyEvent,int) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> a
+    void startTracking(android.view.KeyEvent) -> b
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.g:
+    int metaStateFilterDirectionalModifiers(int,int,int,int,int) -> a
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+    void startTracking(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompat$EclairKeyEventVersionImpl -> android.support.v4.view.h:
+    void startTracking(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.i:
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.j:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+    void startTracking(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompatEclair -> android.support.v4.view.k:
+    void startTracking(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompatHoneycomb -> android.support.v4.view.l:
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.m:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionMasked(android.view.MotionEvent) -> a
+    int getActionIndex(android.view.MotionEvent) -> b
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+    int getPointerCount(android.view.MotionEvent) -> c
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.n:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+    int getPointerCount(android.view.MotionEvent) -> a
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.o:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+    int getPointerCount(android.view.MotionEvent) -> a
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.p:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+    int getPointerCount(android.view.MotionEvent) -> a
+android.support.v4.view.MotionEventCompatEclair -> android.support.v4.view.q:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+    int getPointerCount(android.view.MotionEvent) -> a
+android.support.v4.view.PagerAdapter -> android.support.v4.view.r:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    void startUpdate(android.view.ViewGroup) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object) -> b
+    void finishUpdate(android.view.ViewGroup) -> b
+    void startUpdate(android.view.View) -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem(android.view.View,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.View,int,java.lang.Object) -> b
+    void finishUpdate(android.view.View) -> b
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.os.Parcelable saveState() -> b
+    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+    int getItemPosition(java.lang.Object) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+    float getPageWidth(int) -> a
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.s:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+    float getYVelocity(android.view.VelocityTracker,int) -> b
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.t:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+    float getYVelocity(android.view.VelocityTracker,int) -> b
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.u:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+    float getYVelocity(android.view.VelocityTracker,int) -> b
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.v:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+    float getYVelocity(android.view.VelocityTracker,int) -> b
+android.support.v4.view.VelocityTrackerCompatHoneycomb -> android.support.v4.view.w:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+    float getYVelocity(android.view.VelocityTracker,int) -> b
+android.support.v4.view.ViewCompat -> android.support.v4.view.x:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+    int getLayerType(android.view.View) -> c
+    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
+    int getLayoutDirection(android.view.View) -> d
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.y:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+    int getLayerType(android.view.View) -> c
+    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
+    int getLayoutDirection(android.view.View) -> d
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.z:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.aa:
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+    int getLayerType(android.view.View) -> c
+    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.ab:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.ac:
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl -> android.support.v4.view.ad:
+    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
+    int getLayoutDirection(android.view.View) -> d
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.ae:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+    int getLayerType(android.view.View) -> c
+    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
+    int getLayoutDirection(android.view.View) -> d
+android.support.v4.view.ViewCompatGingerbread -> android.support.v4.view.af:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompatHC -> android.support.v4.view.ag:
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+    int getLayerType(android.view.View) -> a
+android.support.v4.view.ViewCompatICS -> android.support.v4.view.ah:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompatJB -> android.support.v4.view.ai:
+    void postInvalidateOnAnimation(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View,int,int,int,int) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+android.support.v4.view.ViewCompatJellybeanMr1 -> android.support.v4.view.aj:
+    void setLayerPaint(android.view.View,android.graphics.Paint) -> a
+    int getLayoutDirection(android.view.View) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    int mExpectedAdapterCount -> b
+    java.util.Comparator COMPARATOR -> c
+    android.view.animation.Interpolator sInterpolator -> d
+    java.util.ArrayList mItems -> e
+    android.support.v4.view.ViewPager$ItemInfo mTempItem -> f
+    android.graphics.Rect mTempRect -> g
+    android.support.v4.view.PagerAdapter mAdapter -> h
+    int mCurItem -> i
+    int mRestoredCurItem -> j
+    android.os.Parcelable mRestoredAdapterState -> k
+    java.lang.ClassLoader mRestoredClassLoader -> l
+    android.widget.Scroller mScroller -> m
+    android.support.v4.view.ViewPager$PagerObserver mObserver -> n
+    int mPageMargin -> o
+    android.graphics.drawable.Drawable mMarginDrawable -> p
+    int mTopPageBounds -> q
+    int mBottomPageBounds -> r
+    float mFirstOffset -> s
+    float mLastOffset -> t
+    int mChildWidthMeasureSpec -> u
+    int mChildHeightMeasureSpec -> v
+    boolean mInLayout -> w
+    boolean mScrollingCacheEnabled -> x
+    boolean mPopulatePending -> y
+    int mOffscreenPageLimit -> z
+    boolean mIsBeingDragged -> A
+    boolean mIsUnableToDrag -> B
+    int mDefaultGutterSize -> C
+    int mGutterSize -> D
+    int mTouchSlop -> E
+    float mLastMotionX -> F
+    float mLastMotionY -> G
+    float mInitialMotionX -> H
+    float mInitialMotionY -> I
+    int mActivePointerId -> J
+    android.view.VelocityTracker mVelocityTracker -> K
+    int mMinimumVelocity -> L
+    int mMaximumVelocity -> M
+    int mFlingDistance -> N
+    int mCloseEnough -> O
+    boolean mFakeDragging -> P
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> Q
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> R
+    boolean mFirstLayout -> S
+    boolean mNeedCalculatePageOffsets -> T
+    boolean mCalledSuper -> U
+    int mDecorChildCount -> V
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> W
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> Z
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> aa
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> ab
+    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ac
+    int mDrawingOrder -> ad
+    java.util.ArrayList mDrawingOrderedChildren -> ae
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> af
+    java.lang.Runnable mEndScrollRunnable -> ag
+    int mScrollState -> ah
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void setScrollState(int) -> setScrollState
+    void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
+    void removeNonDecorViews() -> f
+    android.support.v4.view.PagerAdapter getAdapter() -> getAdapter
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> setOnAdapterChangeListener
+    int getClientWidth() -> getClientWidth
+    void setCurrentItem(int) -> setCurrentItem
+    void setCurrentItem(int,boolean) -> a
+    int getCurrentItem() -> getCurrentItem
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    void scrollToItem(int,boolean,int,boolean) -> a
+    void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> setOnPageChangeListener
+    void setChildrenDrawingOrderEnabledCompat(boolean) -> setChildrenDrawingOrderEnabledCompat
+    int getChildDrawingOrder(int,int) -> getChildDrawingOrder
+    int getOffscreenPageLimit() -> getOffscreenPageLimit
+    void setOffscreenPageLimit(int) -> setOffscreenPageLimit
+    void setPageMargin(int) -> setPageMargin
+    int getPageMargin() -> getPageMargin
+    void setPageMarginDrawable(android.graphics.drawable.Drawable) -> setPageMarginDrawable
+    void setPageMarginDrawable(int) -> setPageMarginDrawable
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    float distanceInfluenceForSnapDuration(float) -> a
+    void smoothScrollTo(int,int,int) -> a
+    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    void dataSetChanged() -> a
+    void populate() -> b
+    void populate(int) -> a
+    void sortChildDrawingOrder() -> g
+    void calculatePageOffsets(android.support.v4.view.ViewPager$ItemInfo,int,android.support.v4.view.ViewPager$ItemInfo) -> a
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    void removeView(android.view.View) -> removeView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> b
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void recomputeScrollPosition(int,int,int,int) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    boolean pageScrolled(int) -> d
+    void onPageScrolled(int,float,int) -> a
+    void completeScroll(boolean) -> a
+    boolean isGutterDrag(float,float) -> a
+    void enableLayers(boolean) -> b
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performDrag(float) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> h
+    int determineTargetPage(int,float,int,int) -> a
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> i
+    void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean executeKeyEvent(android.view.KeyEvent) -> a
+    boolean arrowScroll(int) -> c
+    android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
+    boolean pageLeft() -> c
+    boolean pageRight() -> d
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    int[] access$400() -> e
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.ak:
+    int compare(android.support.v4.view.ViewPager$ItemInfo,android.support.v4.view.ViewPager$ItemInfo) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.al:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.am:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.an:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+    float widthFactor -> d
+    float offset -> e
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ao:
+    boolean isDecor -> a
+    int gravity -> b
+    float widthFactor -> c
+    boolean needsMeasure -> d
+    int position -> e
+    int childIndex -> f
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ap:
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.aq:
+    void onPageScrolled(int,float,int) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+android.support.v4.view.ViewPager$PageTransformer -> android.support.v4.view.ar:
+    void transformPage(android.view.View,float) -> a
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.as:
+    android.support.v4.view.ViewPager this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.at:
+    android.support.v4.view.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> b
+    android.support.v4.view.ViewPager$SavedState[] newArray(int) -> b
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.view.ViewPager$ViewPositionComparator -> android.support.v4.view.au:
+    int compare(android.view.View,android.view.View) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.widget.DrawerLayout -> android.support.v4.widget.DrawerLayout:
+    int[] LAYOUT_ATTRS -> a
+    int mMinDrawerMargin -> b
+    int mScrimColor -> c
+    float mScrimOpacity -> d
+    android.graphics.Paint mScrimPaint -> e
+    android.support.v4.widget.ViewDragHelper mLeftDragger -> f
+    android.support.v4.widget.ViewDragHelper mRightDragger -> g
+    android.support.v4.widget.DrawerLayout$ViewDragCallback mLeftCallback -> h
+    android.support.v4.widget.DrawerLayout$ViewDragCallback mRightCallback -> i
+    int mDrawerState -> j
+    boolean mInLayout -> k
+    boolean mFirstLayout -> l
+    int mLockModeLeft -> m
+    int mLockModeRight -> n
+    boolean mDisallowInterceptRequested -> o
+    boolean mChildrenCanceledTouch -> p
+    android.support.v4.widget.DrawerLayout$DrawerListener mListener -> q
+    float mInitialMotionX -> r
+    float mInitialMotionY -> s
+    android.graphics.drawable.Drawable mShadowLeft -> t
+    android.graphics.drawable.Drawable mShadowRight -> u
+    void setScrimColor(int) -> setScrimColor
+    void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener) -> setDrawerListener
+    void setDrawerLockMode(int) -> setDrawerLockMode
+    void setDrawerLockMode(int,int) -> a
+    int getDrawerLockMode(android.view.View) -> a
+    void updateDrawerState(int,int,android.view.View) -> a
+    void dispatchOnDrawerClosed(android.view.View) -> b
+    void dispatchOnDrawerOpened(android.view.View) -> c
+    void dispatchOnDrawerSlide(android.view.View,float) -> a
+    void setDrawerViewOffset(android.view.View,float) -> b
+    float getDrawerViewOffset(android.view.View) -> d
+    int getDrawerViewGravity(android.view.View) -> e
+    boolean checkDrawerViewGravity(android.view.View,int) -> a
+    android.view.View findOpenDrawer() -> a
+    android.view.View findDrawerWithGravity(int) -> a
+    java.lang.String gravityToString(int) -> b
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void requestLayout() -> requestLayout
+    void computeScroll() -> computeScroll
+    boolean hasOpaqueBackground(android.view.View) -> k
+    boolean drawChild(android.graphics.Canvas,android.view.View,long) -> drawChild
+    boolean isContentView(android.view.View) -> f
+    boolean isDrawerView(android.view.View) -> g
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void requestDisallowInterceptTouchEvent(boolean) -> requestDisallowInterceptTouchEvent
+    void closeDrawers() -> b
+    void closeDrawers(boolean) -> a
+    void openDrawer(android.view.View) -> h
+    void closeDrawer(android.view.View) -> i
+    boolean isDrawerVisible(android.view.View) -> j
+    boolean hasPeekingDrawer() -> d
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    boolean hasVisibleDrawer() -> e
+    android.view.View findVisibleDrawer() -> f
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    int[] access$100() -> c
+android.support.v4.widget.DrawerLayout$DrawerListener -> android.support.v4.widget.a:
+    void onDrawerSlide(android.view.View,float) -> a
+    void onDrawerOpened(android.view.View) -> a
+    void onDrawerClosed(android.view.View) -> b
+    void onDrawerStateChanged(int) -> a
+android.support.v4.widget.DrawerLayout$LayoutParams -> android.support.v4.widget.b:
+    int gravity -> a
+    float onScreen -> b
+    boolean isPeeking -> c
+    boolean knownOpen -> d
+android.support.v4.widget.DrawerLayout$SavedState -> android.support.v4.widget.DrawerLayout$SavedState:
+    int openDrawerGravity -> a
+    int lockModeLeft -> b
+    int lockModeRight -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.widget.DrawerLayout$SavedState$1 -> android.support.v4.widget.c:
+    android.support.v4.widget.DrawerLayout$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.widget.DrawerLayout$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.widget.DrawerLayout$ViewDragCallback -> android.support.v4.widget.d:
+    int mGravity -> b
+    android.support.v4.widget.ViewDragHelper mDragger -> c
+    java.lang.Runnable mPeekRunnable -> d
+    android.support.v4.widget.DrawerLayout this$0 -> a
+    void removeCallbacks() -> a
+    boolean tryCaptureView(android.view.View,int) -> a
+    void onViewDragStateChanged(int) -> a
+    void onViewPositionChanged(android.view.View,int,int,int,int) -> a
+    void onViewCaptured(android.view.View,int) -> b
+    void closeOtherDrawer() -> b
+    void onViewReleased(android.view.View,float,float) -> a
+    void onEdgeTouched(int,int) -> a
+    boolean onEdgeLock(int) -> b
+    void onEdgeDragStarted(int,int) -> b
+    int getViewHorizontalDragRange(android.view.View) -> a
+    int clampViewPositionHorizontal(android.view.View,int,int) -> a
+    int clampViewPositionVertical(android.view.View,int,int) -> b
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.widget.e:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.widget.f:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.widget.g:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.widget.h:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompatIcs -> android.support.v4.widget.i:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.ScrollerCompat -> android.support.v4.widget.j:
+    java.lang.Object mScroller -> a
+    android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl IMPL -> b
+    boolean isFinished() -> a
+    int getCurrX() -> b
+    int getCurrY() -> c
+    int getFinalX() -> d
+    int getFinalY() -> e
+    boolean computeScrollOffset() -> f
+    void startScroll(int,int,int,int,int) -> a
+    void abortAnimation() -> g
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImpl -> android.support.v4.widget.k:
+    boolean isFinished(java.lang.Object) -> a
+    int getCurrX(java.lang.Object) -> b
+    int getCurrY(java.lang.Object) -> c
+    boolean computeScrollOffset(java.lang.Object) -> d
+    void startScroll(java.lang.Object,int,int,int,int,int) -> a
+    void abortAnimation(java.lang.Object) -> e
+    int getFinalX(java.lang.Object) -> f
+    int getFinalY(java.lang.Object) -> g
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplBase -> android.support.v4.widget.l:
+    boolean isFinished(java.lang.Object) -> a
+    int getCurrX(java.lang.Object) -> b
+    int getCurrY(java.lang.Object) -> c
+    boolean computeScrollOffset(java.lang.Object) -> d
+    void startScroll(java.lang.Object,int,int,int,int,int) -> a
+    void abortAnimation(java.lang.Object) -> e
+    int getFinalX(java.lang.Object) -> f
+    int getFinalY(java.lang.Object) -> g
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplGingerbread -> android.support.v4.widget.m:
+    boolean isFinished(java.lang.Object) -> a
+    int getCurrX(java.lang.Object) -> b
+    int getCurrY(java.lang.Object) -> c
+    boolean computeScrollOffset(java.lang.Object) -> d
+    void startScroll(java.lang.Object,int,int,int,int,int) -> a
+    void abortAnimation(java.lang.Object) -> e
+    int getFinalX(java.lang.Object) -> f
+    int getFinalY(java.lang.Object) -> g
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs -> android.support.v4.widget.n:
+android.support.v4.widget.ScrollerCompatGingerbread -> android.support.v4.widget.o:
+    boolean isFinished(java.lang.Object) -> a
+    int getCurrX(java.lang.Object) -> b
+    int getCurrY(java.lang.Object) -> c
+    boolean computeScrollOffset(java.lang.Object) -> d
+    void startScroll(java.lang.Object,int,int,int,int,int) -> a
+    void abortAnimation(java.lang.Object) -> e
+    int getFinalX(java.lang.Object) -> f
+    int getFinalY(java.lang.Object) -> g
+android.support.v4.widget.SlidingPaneLayout -> android.support.v4.widget.SlidingPaneLayout:
+    int mSliderFadeColor -> b
+    int mCoveredFadeColor -> c
+    android.graphics.drawable.Drawable mShadowDrawable -> d
+    int mOverhangSize -> e
+    boolean mCanSlide -> f
+    android.view.View mSlideableView -> g
+    float mSlideOffset -> h
+    float mParallaxOffset -> i
+    int mSlideRange -> j
+    boolean mIsUnableToDrag -> k
+    int mParallaxBy -> l
+    float mInitialMotionX -> m
+    float mInitialMotionY -> n
+    android.support.v4.widget.SlidingPaneLayout$PanelSlideListener mPanelSlideListener -> o
+    android.support.v4.widget.ViewDragHelper mDragHelper -> p
+    boolean mPreservedOpenState -> q
+    boolean mFirstLayout -> r
+    android.graphics.Rect mTmpRect -> s
+    java.util.ArrayList mPostedRunnables -> t
+    android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImpl IMPL -> a
+    void setParallaxDistance(int) -> setParallaxDistance
+    int getParallaxDistance() -> getParallaxDistance
+    void setSliderFadeColor(int) -> setSliderFadeColor
+    int getSliderFadeColor() -> getSliderFadeColor
+    void setCoveredFadeColor(int) -> setCoveredFadeColor
+    int getCoveredFadeColor() -> getCoveredFadeColor
+    void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener) -> setPanelSlideListener
+    void updateObscuredViewsVisibility(android.view.View) -> a
+    void setAllChildrenVisible() -> a
+    boolean hasOpaqueBackground(android.view.View) -> c
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void onMeasure(int,int) -> onMeasure
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void requestChildFocus(android.view.View,android.view.View) -> requestChildFocus
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean closePane(android.view.View,int) -> a
+    boolean openPane(android.view.View,int) -> b
+    boolean openPane() -> b
+    boolean closePane() -> c
+    boolean isOpen() -> d
+    boolean isSlideable() -> e
+    void dimChildView(android.view.View,float,int) -> a
+    boolean drawChild(android.graphics.Canvas,android.view.View,long) -> drawChild
+    void invalidateChildRegion(android.view.View) -> d
+    boolean smoothSlideTo(float,int) -> a
+    void computeScroll() -> computeScroll
+    void setShadowDrawable(android.graphics.drawable.Drawable) -> setShadowDrawable
+    void setShadowResource(int) -> setShadowResource
+    void draw(android.graphics.Canvas) -> draw
+    void parallaxOtherViews(float) -> a
+    boolean isDimmed(android.view.View) -> b
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void access$900(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
+    java.util.ArrayList access$1000(android.support.v4.widget.SlidingPaneLayout) -> a
+android.support.v4.widget.SlidingPaneLayout$1 -> android.support.v4.widget.p:
+android.support.v4.widget.SlidingPaneLayout$DisableLayerRunnable -> android.support.v4.widget.q:
+    android.view.View mChildView -> a
+    android.support.v4.widget.SlidingPaneLayout this$0 -> b
+    void run() -> run
+android.support.v4.widget.SlidingPaneLayout$LayoutParams -> android.support.v4.widget.r:
+    int[] ATTRS -> e
+    float weight -> a
+    boolean slideable -> b
+    boolean dimWhenOffset -> c
+    android.graphics.Paint dimPaint -> d
+android.support.v4.widget.SlidingPaneLayout$PanelSlideListener -> android.support.v4.widget.s:
+android.support.v4.widget.SlidingPaneLayout$SavedState -> android.support.v4.widget.SlidingPaneLayout$SavedState:
+    boolean isOpen -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.widget.SlidingPaneLayout$SavedState$1 -> android.support.v4.widget.t:
+    android.support.v4.widget.SlidingPaneLayout$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.widget.SlidingPaneLayout$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImpl -> android.support.v4.widget.u:
+    void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplBase -> android.support.v4.widget.v:
+    void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplJB -> android.support.v4.widget.w:
+    java.lang.reflect.Method mGetDisplayList -> a
+    java.lang.reflect.Field mRecreateDisplayList -> b
+    void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
+android.support.v4.widget.SlidingPaneLayout$SlidingPanelLayoutImplJBMR1 -> android.support.v4.widget.x:
+    void invalidateChildRegion(android.support.v4.widget.SlidingPaneLayout,android.view.View) -> a
+android.support.v4.widget.ViewDragHelper -> android.support.v4.widget.y:
+    int mDragState -> a
+    int mTouchSlop -> b
+    int mActivePointerId -> c
+    float[] mInitialMotionX -> d
+    float[] mInitialMotionY -> e
+    float[] mLastMotionX -> f
+    float[] mLastMotionY -> g
+    int[] mInitialEdgesTouched -> h
+    int[] mEdgeDragsInProgress -> i
+    int[] mEdgeDragsLocked -> j
+    int mPointersDown -> k
+    android.view.VelocityTracker mVelocityTracker -> l
+    float mMaxVelocity -> m
+    float mMinVelocity -> n
+    int mEdgeSize -> o
+    int mTrackingEdges -> p
+    android.support.v4.widget.ScrollerCompat mScroller -> q
+    android.support.v4.widget.ViewDragHelper$Callback mCallback -> r
+    android.view.View mCapturedView -> s
+    boolean mReleaseInProgress -> t
+    android.view.ViewGroup mParentView -> u
+    android.view.animation.Interpolator sInterpolator -> v
+    java.lang.Runnable mSetIdleRunnable -> w
+    int getViewDragState() -> a
+    int getEdgeSize() -> b
+    void captureChildView(android.view.View,int) -> a
+    android.view.View getCapturedView() -> c
+    int getTouchSlop() -> d
+    void cancel() -> e
+    void abort() -> f
+    boolean smoothSlideViewTo(android.view.View,int,int) -> a
+    boolean settleCapturedViewAt(int,int) -> a
+    boolean forceSettleCapturedViewAt(int,int,int,int) -> a
+    int computeSettleDuration(android.view.View,int,int,int,int) -> a
+    int computeAxisDuration(int,int,int) -> a
+    int clampMag(int,int,int) -> b
+    float clampMag(float,float,float) -> a
+    float distanceInfluenceForSnapDuration(float) -> a
+    boolean continueSettling(boolean) -> a
+    void dispatchViewReleased(float,float) -> a
+    void clearMotionHistory() -> g
+    void clearMotionHistory(int) -> e
+    void ensureMotionHistorySizeForId(int) -> f
+    void saveInitialMotion(float,float,int) -> a
+    void saveLastMotion(android.view.MotionEvent) -> c
+    boolean isPointerDown(int) -> a
+    void setDragState(int) -> b
+    boolean tryCaptureViewForDrag(android.view.View,int) -> b
+    boolean shouldInterceptTouchEvent(android.view.MotionEvent) -> a
+    void processTouchEvent(android.view.MotionEvent) -> b
+    void reportNewEdgeDrags(float,float,int) -> b
+    boolean checkNewEdgeDrag(float,float,int,int) -> a
+    boolean checkTouchSlop(android.view.View,float,float) -> a
+    boolean checkTouchSlop(int) -> c
+    boolean checkTouchSlop(int,int) -> b
+    boolean isEdgeTouched(int) -> d
+    boolean isEdgeTouched(int,int) -> c
+    void releaseViewForPointerUp() -> h
+    void dragTo(int,int,int,int) -> b
+    boolean isCapturedViewUnder(int,int) -> d
+    boolean isViewUnder(android.view.View,int,int) -> b
+    android.view.View findTopChildUnder(int,int) -> e
+    int getEdgesTouched(int,int) -> f
+android.support.v4.widget.ViewDragHelper$1 -> android.support.v4.widget.z:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.widget.ViewDragHelper$Callback -> android.support.v4.widget.aa:
+    void onViewDragStateChanged(int) -> a
+    void onViewPositionChanged(android.view.View,int,int,int,int) -> a
+    void onViewCaptured(android.view.View,int) -> b
+    void onViewReleased(android.view.View,float,float) -> a
+    void onEdgeTouched(int,int) -> a
+    boolean onEdgeLock(int) -> b
+    void onEdgeDragStarted(int,int) -> b
+    int getOrderedChildIndex(int) -> c
+    int getViewHorizontalDragRange(android.view.View) -> a
+    int getViewVerticalDragRange(android.view.View) -> b
+    boolean tryCaptureView(android.view.View,int) -> a
+    int clampViewPositionHorizontal(android.view.View,int,int) -> a
+    int clampViewPositionVertical(android.view.View,int,int) -> b
+com.squareup.okhttp.Address -> com.a.a.a:
+    java.net.Proxy proxy -> a
+    java.lang.String uriHost -> b
+    int uriPort -> c
+    javax.net.ssl.SSLSocketFactory sslSocketFactory -> d
+    javax.net.ssl.HostnameVerifier hostnameVerifier -> e
+    java.lang.String getUriHost() -> a
+    javax.net.ssl.SSLSocketFactory getSslSocketFactory() -> b
+    java.net.Proxy getProxy() -> c
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.squareup.okhttp.Connection -> com.a.a.b:
+    byte[] NPN_PROTOCOLS -> a
+    byte[] SPDY3 -> b
+    byte[] HTTP_11 -> c
+    com.squareup.okhttp.Route route -> d
+    java.net.Socket socket -> e
+    java.io.InputStream in -> f
+    java.io.OutputStream out -> g
+    boolean connected -> h
+    com.squareup.okhttp.internal.spdy.SpdyConnection spdyConnection -> i
+    int httpMinorVersion -> j
+    long idleStartTimeNs -> k
+    void connect(int,int,com.squareup.okhttp.TunnelRequest) -> a
+    void upgradeToTls(com.squareup.okhttp.TunnelRequest) -> a
+    boolean isConnected() -> a
+    void close() -> close
+    com.squareup.okhttp.Route getRoute() -> b
+    java.net.Socket getSocket() -> c
+    boolean isAlive() -> d
+    void resetIdleStartTime() -> e
+    boolean isIdle() -> f
+    boolean isExpired(long) -> a
+    long getIdleStartTimeNs() -> g
+    java.lang.Object newTransport(com.squareup.okhttp.internal.http.HttpEngine) -> a
+    boolean isSpdy() -> h
+    int getHttpMinorVersion() -> i
+    void setHttpMinorVersion(int) -> a
+    boolean requiresTunnel() -> j
+    void makeTunnel(com.squareup.okhttp.TunnelRequest) -> b
+com.squareup.okhttp.ConnectionPool -> com.a.a.c:
+    com.squareup.okhttp.ConnectionPool systemDefault -> a
+    int maxIdleConnections -> b
+    long keepAliveDurationNs -> c
+    java.util.LinkedList connections -> d
+    java.util.concurrent.ExecutorService executorService -> e
+    java.util.concurrent.Callable connectionsCleanupCallable -> f
+    com.squareup.okhttp.ConnectionPool getDefault() -> a
+    com.squareup.okhttp.Connection get(com.squareup.okhttp.Address) -> a
+    void recycle(com.squareup.okhttp.Connection) -> a
+    void maybeShare(com.squareup.okhttp.Connection) -> b
+    java.util.LinkedList access$000(com.squareup.okhttp.ConnectionPool) -> a
+    long access$100(com.squareup.okhttp.ConnectionPool) -> b
+    int access$200(com.squareup.okhttp.ConnectionPool) -> c
+com.squareup.okhttp.ConnectionPool$1 -> com.a.a.d:
+    com.squareup.okhttp.ConnectionPool this$0 -> a
+    java.lang.Void call() -> a
+    java.lang.Object call() -> call
+com.squareup.okhttp.HttpResponseCache -> com.a.a.e:
+    char[] DIGITS -> b
+    com.squareup.okhttp.internal.DiskLruCache cache -> c
+    int writeSuccessCount -> d
+    int writeAbortCount -> e
+    com.squareup.okhttp.internal.http.OkResponseCache okResponseCache -> a
+    java.lang.String uriToKey(java.net.URI) -> a
+    java.lang.String bytesToHexString(byte[]) -> a
+    java.net.CacheResponse get(java.net.URI,java.lang.String,java.util.Map) -> get
+    java.net.CacheRequest put(java.net.URI,java.net.URLConnection) -> put
+    void abortQuietly(com.squareup.okhttp.internal.DiskLruCache$Editor) -> a
+    com.squareup.okhttp.internal.http.HttpEngine getHttpEngine(java.net.URLConnection) -> a
+    java.io.InputStream newBodyInputStream(com.squareup.okhttp.internal.DiskLruCache$Snapshot) -> b
+    int access$708(com.squareup.okhttp.HttpResponseCache) -> a
+    int access$808(com.squareup.okhttp.HttpResponseCache) -> b
+    java.io.InputStream access$900(com.squareup.okhttp.internal.DiskLruCache$Snapshot) -> a
+com.squareup.okhttp.HttpResponseCache$2 -> com.a.a.f:
+    com.squareup.okhttp.internal.DiskLruCache$Snapshot val$snapshot -> a
+    void close() -> close
+com.squareup.okhttp.HttpResponseCache$CacheRequestImpl -> com.a.a.g:
+    com.squareup.okhttp.internal.DiskLruCache$Editor editor -> b
+    java.io.OutputStream cacheOut -> c
+    boolean done -> d
+    java.io.OutputStream body -> e
+    com.squareup.okhttp.HttpResponseCache this$0 -> a
+    void abort() -> abort
+    java.io.OutputStream getBody() -> getBody
+    boolean access$600(com.squareup.okhttp.HttpResponseCache$CacheRequestImpl) -> a
+    boolean access$602(com.squareup.okhttp.HttpResponseCache$CacheRequestImpl,boolean) -> a
+com.squareup.okhttp.HttpResponseCache$CacheRequestImpl$1 -> com.a.a.h:
+    com.squareup.okhttp.HttpResponseCache val$this$0 -> a
+    com.squareup.okhttp.internal.DiskLruCache$Editor val$editor -> b
+    com.squareup.okhttp.HttpResponseCache$CacheRequestImpl this$1 -> c
+    void close() -> close
+    void write(byte[],int,int) -> write
+com.squareup.okhttp.HttpResponseCache$Entry -> com.a.a.i:
+    java.lang.String uri -> a
+    com.squareup.okhttp.internal.http.RawHeaders varyHeaders -> b
+    java.lang.String requestMethod -> c
+    com.squareup.okhttp.internal.http.RawHeaders responseHeaders -> d
+    java.lang.String cipherSuite -> e
+    java.security.cert.Certificate[] peerCertificates -> f
+    java.security.cert.Certificate[] localCertificates -> g
+    void writeTo(com.squareup.okhttp.internal.DiskLruCache$Editor) -> a
+    boolean isHttps() -> a
+    java.security.cert.Certificate[] readCertArray(com.squareup.okhttp.internal.StrictLineReader) -> a
+    void writeCertArray(java.io.Writer,java.security.cert.Certificate[]) -> a
+    boolean matches(java.net.URI,java.lang.String,java.util.Map) -> a
+    boolean access$300(com.squareup.okhttp.HttpResponseCache$Entry) -> a
+    com.squareup.okhttp.internal.http.RawHeaders access$1000(com.squareup.okhttp.HttpResponseCache$Entry) -> b
+    java.lang.String access$1100(com.squareup.okhttp.HttpResponseCache$Entry) -> c
+    java.security.cert.Certificate[] access$1200(com.squareup.okhttp.HttpResponseCache$Entry) -> d
+    java.security.cert.Certificate[] access$1300(com.squareup.okhttp.HttpResponseCache$Entry) -> e
+com.squareup.okhttp.HttpResponseCache$EntryCacheResponse -> com.a.a.j:
+    com.squareup.okhttp.HttpResponseCache$Entry entry -> a
+    com.squareup.okhttp.internal.DiskLruCache$Snapshot snapshot -> b
+    java.io.InputStream in -> c
+    java.util.Map getHeaders() -> getHeaders
+    java.io.InputStream getBody() -> getBody
+com.squareup.okhttp.HttpResponseCache$EntrySecureCacheResponse -> com.a.a.k:
+    com.squareup.okhttp.HttpResponseCache$Entry entry -> a
+    com.squareup.okhttp.internal.DiskLruCache$Snapshot snapshot -> b
+    java.io.InputStream in -> c
+    java.util.Map getHeaders() -> getHeaders
+    java.io.InputStream getBody() -> getBody
+    java.lang.String getCipherSuite() -> getCipherSuite
+    java.util.List getServerCertificateChain() -> getServerCertificateChain
+    java.security.Principal getPeerPrincipal() -> getPeerPrincipal
+    java.util.List getLocalCertificateChain() -> getLocalCertificateChain
+    java.security.Principal getLocalPrincipal() -> getLocalPrincipal
+com.squareup.okhttp.OkHttpClient -> com.a.a.l:
+    java.net.Proxy proxy -> a
+    java.util.Set failedRoutes -> b
+    java.net.ProxySelector proxySelector -> c
+    java.net.CookieHandler cookieHandler -> d
+    java.net.ResponseCache responseCache -> e
+    javax.net.ssl.SSLSocketFactory sslSocketFactory -> f
+    javax.net.ssl.HostnameVerifier hostnameVerifier -> g
+    com.squareup.okhttp.ConnectionPool connectionPool -> h
+    boolean followProtocolRedirects -> i
+    java.net.Proxy getProxy() -> a
+    java.net.ProxySelector getProxySelector() -> b
+    java.net.CookieHandler getCookieHandler() -> c
+    com.squareup.okhttp.internal.http.OkResponseCache okResponseCache() -> h
+    javax.net.ssl.SSLSocketFactory getSslSocketFactory() -> d
+    javax.net.ssl.HostnameVerifier getHostnameVerifier() -> e
+    com.squareup.okhttp.ConnectionPool getConnectionPool() -> f
+    boolean getFollowProtocolRedirects() -> g
+    java.net.HttpURLConnection open(java.net.URL) -> a
+    com.squareup.okhttp.OkHttpClient copyWithDefaults() -> i
+com.squareup.okhttp.ResponseSource -> com.a.a.m:
+    com.squareup.okhttp.ResponseSource CACHE -> a
+    com.squareup.okhttp.ResponseSource CONDITIONAL_CACHE -> b
+    com.squareup.okhttp.ResponseSource NETWORK -> c
+    com.squareup.okhttp.ResponseSource[] $VALUES -> d
+    com.squareup.okhttp.ResponseSource[] values() -> values
+    com.squareup.okhttp.ResponseSource valueOf(java.lang.String) -> valueOf
+    boolean requiresConnection() -> a
+com.squareup.okhttp.Route -> com.a.a.n:
+    com.squareup.okhttp.Address address -> a
+    java.net.Proxy proxy -> b
+    java.net.InetSocketAddress inetSocketAddress -> c
+    boolean modernTls -> d
+    com.squareup.okhttp.Address getAddress() -> a
+    java.net.Proxy getProxy() -> b
+    com.squareup.okhttp.Route flipTlsMode() -> c
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.squareup.okhttp.TunnelRequest -> com.a.a.o:
+    java.lang.String host -> a
+    int port -> b
+    java.lang.String userAgent -> c
+    java.lang.String proxyAuthorization -> d
+    com.squareup.okhttp.internal.http.RawHeaders getRequestHeaders() -> a
+com.squareup.okhttp.internal.AbstractOutputStream -> com.a.a.a.a:
+    boolean closed -> a
+    void write(int) -> write
+    void checkNotClosed() -> a
+    boolean isClosed() -> b
+com.squareup.okhttp.internal.Base64 -> com.a.a.a.b:
+    byte[] MAP -> a
+    byte[] decode(byte[]) -> a
+    byte[] decode(byte[],int) -> a
+    java.lang.String encode(byte[]) -> b
+com.squareup.okhttp.internal.DiskLruCache -> com.a.a.a.c:
+    java.util.regex.Pattern LEGAL_KEY_PATTERN -> a
+    java.io.File directory -> c
+    java.io.File journalFile -> d
+    java.io.File journalFileTmp -> e
+    java.io.File journalFileBackup -> f
+    int appVersion -> g
+    long maxSize -> h
+    int valueCount -> i
+    long size -> j
+    java.io.Writer journalWriter -> k
+    java.util.LinkedHashMap lruEntries -> l
+    int redundantOpCount -> m
+    long nextSequenceNumber -> n
+    java.util.concurrent.ThreadPoolExecutor executorService -> b
+    java.util.concurrent.Callable cleanupCallable -> o
+    java.io.OutputStream NULL_OUTPUT_STREAM -> p
+    void rebuildJournal() -> b
+    void deleteIfExists(java.io.File) -> a
+    void renameTo(java.io.File,java.io.File,boolean) -> a
+    com.squareup.okhttp.internal.DiskLruCache$Snapshot get(java.lang.String) -> a
+    com.squareup.okhttp.internal.DiskLruCache$Editor edit(java.lang.String) -> b
+    com.squareup.okhttp.internal.DiskLruCache$Editor edit(java.lang.String,long) -> a
+    void completeEdit(com.squareup.okhttp.internal.DiskLruCache$Editor,boolean) -> a
+    boolean journalRebuildRequired() -> c
+    boolean remove(java.lang.String) -> c
+    void checkNotClosed() -> d
+    void close() -> close
+    void trimToSize() -> e
+    void validateKey(java.lang.String) -> d
+    java.io.Writer access$000(com.squareup.okhttp.internal.DiskLruCache) -> a
+    void access$100(com.squareup.okhttp.internal.DiskLruCache) -> b
+    boolean access$200(com.squareup.okhttp.internal.DiskLruCache) -> c
+    void access$300(com.squareup.okhttp.internal.DiskLruCache) -> d
+    int access$402(com.squareup.okhttp.internal.DiskLruCache,int) -> a
+    int access$1800(com.squareup.okhttp.internal.DiskLruCache) -> e
+    java.io.File access$1900(com.squareup.okhttp.internal.DiskLruCache) -> f
+    java.io.OutputStream access$2000() -> a
+    void access$2200(com.squareup.okhttp.internal.DiskLruCache,com.squareup.okhttp.internal.DiskLruCache$Editor,boolean) -> a
+com.squareup.okhttp.internal.DiskLruCache$1 -> com.a.a.a.d:
+    com.squareup.okhttp.internal.DiskLruCache this$0 -> a
+    java.lang.Void call() -> a
+    java.lang.Object call() -> call
+com.squareup.okhttp.internal.DiskLruCache$2 -> com.a.a.a.e:
+    void write(int) -> write
+com.squareup.okhttp.internal.DiskLruCache$Editor -> com.a.a.a.f:
+    com.squareup.okhttp.internal.DiskLruCache$Entry entry -> b
+    boolean[] written -> c
+    boolean hasErrors -> d
+    boolean committed -> e
+    com.squareup.okhttp.internal.DiskLruCache this$0 -> a
+    java.io.OutputStream newOutputStream(int) -> a
+    void commit() -> a
+    void abort() -> b
+    com.squareup.okhttp.internal.DiskLruCache$Entry access$1400(com.squareup.okhttp.internal.DiskLruCache$Editor) -> a
+    boolean[] access$1500(com.squareup.okhttp.internal.DiskLruCache$Editor) -> b
+    boolean access$2302(com.squareup.okhttp.internal.DiskLruCache$Editor,boolean) -> a
+com.squareup.okhttp.internal.DiskLruCache$Editor$FaultHidingOutputStream -> com.a.a.a.g:
+    com.squareup.okhttp.internal.DiskLruCache$Editor this$1 -> a
+    void write(int) -> write
+    void write(byte[],int,int) -> write
+    void close() -> close
+    void flush() -> flush
+com.squareup.okhttp.internal.DiskLruCache$Entry -> com.a.a.a.h:
+    java.lang.String key -> b
+    long[] lengths -> c
+    boolean readable -> d
+    com.squareup.okhttp.internal.DiskLruCache$Editor currentEditor -> e
+    long sequenceNumber -> f
+    com.squareup.okhttp.internal.DiskLruCache this$0 -> a
+    java.lang.String getLengths() -> a
+    java.io.File getCleanFile(int) -> a
+    java.io.File getDirtyFile(int) -> b
+    boolean access$602(com.squareup.okhttp.internal.DiskLruCache$Entry,boolean) -> a
+    com.squareup.okhttp.internal.DiskLruCache$Editor access$702(com.squareup.okhttp.internal.DiskLruCache$Entry,com.squareup.okhttp.internal.DiskLruCache$Editor) -> a
+    com.squareup.okhttp.internal.DiskLruCache$Editor access$700(com.squareup.okhttp.internal.DiskLruCache$Entry) -> a
+    long[] access$1000(com.squareup.okhttp.internal.DiskLruCache$Entry) -> b
+    java.lang.String access$1100(com.squareup.okhttp.internal.DiskLruCache$Entry) -> c
+    boolean access$600(com.squareup.okhttp.internal.DiskLruCache$Entry) -> d
+    long access$1200(com.squareup.okhttp.internal.DiskLruCache$Entry) -> e
+    long access$1202(com.squareup.okhttp.internal.DiskLruCache$Entry,long) -> a
+com.squareup.okhttp.internal.DiskLruCache$Snapshot -> com.a.a.a.i:
+    java.lang.String key -> b
+    long sequenceNumber -> c
+    java.io.InputStream[] ins -> d
+    long[] lengths -> e
+    com.squareup.okhttp.internal.DiskLruCache this$0 -> a
+    java.io.InputStream getInputStream(int) -> a
+    void close() -> close
+com.squareup.okhttp.internal.Dns -> com.a.a.a.j:
+    com.squareup.okhttp.internal.Dns DEFAULT -> a
+    java.net.InetAddress[] getAllByName(java.lang.String) -> a
+com.squareup.okhttp.internal.Dns$1 -> com.a.a.a.k:
+    java.net.InetAddress[] getAllByName(java.lang.String) -> a
+com.squareup.okhttp.internal.FaultRecoveringOutputStream -> com.a.a.a.l:
+    int maxReplayBufferLength -> b
+    java.io.ByteArrayOutputStream replayBuffer -> c
+    java.io.OutputStream out -> d
+    void write(byte[],int,int) -> write
+    void flush() -> flush
+    void close() -> close
+    boolean recover(java.io.IOException) -> b
+    boolean isRecoverable() -> c
+    void replaceStream(java.io.OutputStream) -> a
+    java.io.OutputStream replacementStream(java.io.IOException) -> a
+com.squareup.okhttp.internal.NamedRunnable -> com.a.a.a.m:
+    java.lang.String name -> a
+    void run() -> run
+    void execute() -> a
+com.squareup.okhttp.internal.Platform -> com.a.a.a.n:
+    com.squareup.okhttp.internal.Platform PLATFORM -> a
+    java.lang.reflect.Constructor deflaterConstructor -> b
+    com.squareup.okhttp.internal.Platform get() -> a
+    void logW(java.lang.String) -> a
+    void tagSocket(java.net.Socket) -> a
+    void untagSocket(java.net.Socket) -> b
+    java.net.URI toUriLenient(java.net.URL) -> a
+    void enableTlsExtensions(javax.net.ssl.SSLSocket,java.lang.String) -> a
+    void supportTlsIntolerantServer(javax.net.ssl.SSLSocket) -> a
+    byte[] getNpnSelectedProtocol(javax.net.ssl.SSLSocket) -> b
+    void setNpnProtocols(javax.net.ssl.SSLSocket,byte[]) -> a
+    java.io.OutputStream newDeflaterOutputStream(java.io.OutputStream,java.util.zip.Deflater,boolean) -> a
+    int getMtu(java.net.Socket) -> c
+    com.squareup.okhttp.internal.Platform findPlatform() -> b
+com.squareup.okhttp.internal.Platform$1 -> com.a.a.a.o:
+com.squareup.okhttp.internal.Platform$Android23 -> com.a.a.a.p:
+    java.lang.Class openSslSocketClass -> a
+    java.lang.reflect.Method setUseSessionTickets -> b
+    java.lang.reflect.Method setHostname -> c
+    void enableTlsExtensions(javax.net.ssl.SSLSocket,java.lang.String) -> a
+com.squareup.okhttp.internal.Platform$Android41 -> com.a.a.a.q:
+    java.lang.reflect.Method setNpnProtocols -> b
+    java.lang.reflect.Method getNpnSelectedProtocol -> c
+    void setNpnProtocols(javax.net.ssl.SSLSocket,byte[]) -> a
+    byte[] getNpnSelectedProtocol(javax.net.ssl.SSLSocket) -> b
+com.squareup.okhttp.internal.Platform$Java5 -> com.a.a.a.r:
+    java.lang.reflect.Method getMtu -> a
+    int getMtu(java.net.Socket) -> c
+com.squareup.okhttp.internal.Platform$JdkWithJettyNpnPlatform -> com.a.a.a.s:
+    java.lang.reflect.Method getMethod -> a
+    java.lang.reflect.Method putMethod -> b
+    java.lang.Class clientProviderClass -> c
+    java.lang.Class serverProviderClass -> d
+    void setNpnProtocols(javax.net.ssl.SSLSocket,byte[]) -> a
+    byte[] getNpnSelectedProtocol(javax.net.ssl.SSLSocket) -> b
+com.squareup.okhttp.internal.Platform$JettyNpnProvider -> com.a.a.a.t:
+    java.util.List protocols -> a
+    boolean unsupported -> b
+    java.lang.String selected -> c
+    java.lang.Object invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[]) -> invoke
+    boolean access$300(com.squareup.okhttp.internal.Platform$JettyNpnProvider) -> a
+    java.lang.String access$400(com.squareup.okhttp.internal.Platform$JettyNpnProvider) -> b
+com.squareup.okhttp.internal.StrictLineReader -> com.a.a.a.u:
+    java.io.InputStream in -> a
+    java.nio.charset.Charset charset -> b
+    byte[] buf -> c
+    int pos -> d
+    int end -> e
+    void close() -> close
+    java.lang.String readLine() -> a
+    int readInt() -> b
+    void fillBuf() -> c
+    java.nio.charset.Charset access$000(com.squareup.okhttp.internal.StrictLineReader) -> a
+com.squareup.okhttp.internal.StrictLineReader$1 -> com.a.a.a.v:
+    com.squareup.okhttp.internal.StrictLineReader this$0 -> a
+    java.lang.String toString() -> toString
+com.squareup.okhttp.internal.Util -> com.a.a.a.w:
+    byte[] EMPTY_BYTE_ARRAY -> a
+    java.lang.String[] EMPTY_STRING_ARRAY -> b
+    java.nio.charset.Charset ISO_8859_1 -> c
+    java.nio.charset.Charset US_ASCII -> d
+    java.nio.charset.Charset UTF_8 -> e
+    java.util.concurrent.atomic.AtomicReference skipBuffer -> f
+    int getEffectivePort(java.net.URI) -> a
+    int getEffectivePort(java.net.URL) -> a
+    int getEffectivePort(java.lang.String,int) -> a
+    int getDefaultPort(java.lang.String) -> a
+    void checkOffsetAndCount(int,int,int) -> a
+    void pokeInt(byte[],int,int,java.nio.ByteOrder) -> a
+    boolean equal(java.lang.Object,java.lang.Object) -> a
+    void closeQuietly(java.io.Closeable) -> a
+    void closeAll(java.io.Closeable,java.io.Closeable) -> a
+    int readSingleByte(java.io.InputStream) -> a
+    void writeSingleByte(java.io.OutputStream,int) -> a
+    void readFully(java.io.InputStream,byte[]) -> a
+    void readFully(java.io.InputStream,byte[],int,int) -> a
+    void skipAll(java.io.InputStream) -> b
+    long skipByReading(java.io.InputStream,long) -> a
+    java.lang.String readAsciiLine(java.io.InputStream) -> c
+com.squareup.okhttp.internal.http.AbstractHttpInputStream -> com.a.a.a.a.a:
+    java.io.InputStream in -> a
+    com.squareup.okhttp.internal.http.HttpEngine httpEngine -> b
+    java.net.CacheRequest cacheRequest -> d
+    java.io.OutputStream cacheBody -> e
+    boolean closed -> c
+    int read() -> read
+    void checkNotClosed() -> a
+    void cacheWrite(byte[],int,int) -> a
+    void endOfInput(boolean) -> a
+    void unexpectedEndOfInput() -> b
+com.squareup.okhttp.internal.http.HeaderParser -> com.a.a.a.a.b:
+    void parseCacheControl(java.lang.String,com.squareup.okhttp.internal.http.HeaderParser$CacheControlHandler) -> a
+    int skipUntil(java.lang.String,int,java.lang.String) -> a
+    int skipWhitespace(java.lang.String,int) -> a
+    int parseSeconds(java.lang.String) -> a
+com.squareup.okhttp.internal.http.HeaderParser$CacheControlHandler -> com.a.a.a.a.c:
+    void handle(java.lang.String,java.lang.String) -> a
+com.squareup.okhttp.internal.http.HttpAuthenticator -> com.a.a.a.a.d:
+    boolean processAuthHeader(int,com.squareup.okhttp.internal.http.RawHeaders,com.squareup.okhttp.internal.http.RawHeaders,java.net.Proxy,java.net.URL) -> a
+    java.lang.String getCredentials(com.squareup.okhttp.internal.http.RawHeaders,java.lang.String,java.net.Proxy,java.net.URL) -> a
+    java.net.InetAddress getConnectToInetAddress(java.net.Proxy,java.net.URL) -> a
+    java.util.List parseChallenges(com.squareup.okhttp.internal.http.RawHeaders,java.lang.String) -> a
+com.squareup.okhttp.internal.http.HttpAuthenticator$Challenge -> com.a.a.a.a.e:
+    java.lang.String scheme -> a
+    java.lang.String realm -> b
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.squareup.okhttp.internal.http.HttpDate -> com.a.a.a.a.f:
+    java.lang.ThreadLocal STANDARD_DATE_FORMAT -> a
+    java.lang.String[] BROWSER_COMPATIBLE_DATE_FORMATS -> b
+    java.util.Date parse(java.lang.String) -> a
+    java.lang.String format(java.util.Date) -> a
+com.squareup.okhttp.internal.http.HttpDate$1 -> com.a.a.a.a.g:
+    java.text.DateFormat initialValue() -> a
+    java.lang.Object initialValue() -> initialValue
+com.squareup.okhttp.internal.http.HttpEngine -> com.a.a.a.a.h:
+    java.net.CacheResponse GATEWAY_TIMEOUT_RESPONSE -> i
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl policy -> a
+    java.lang.String method -> b
+    com.squareup.okhttp.ResponseSource responseSource -> j
+    com.squareup.okhttp.Connection connection -> c
+    com.squareup.okhttp.internal.http.RouteSelector routeSelector -> d
+    java.io.OutputStream requestBodyOut -> k
+    com.squareup.okhttp.internal.http.Transport transport -> l
+    java.io.InputStream responseTransferIn -> m
+    java.io.InputStream responseBodyIn -> n
+    java.net.CacheResponse cacheResponse -> o
+    java.net.CacheRequest cacheRequest -> p
+    long sentRequestMillis -> e
+    boolean transparentGzip -> q
+    java.net.URI uri -> f
+    com.squareup.okhttp.internal.http.RequestHeaders requestHeaders -> g
+    com.squareup.okhttp.internal.http.ResponseHeaders responseHeaders -> h
+    com.squareup.okhttp.internal.http.ResponseHeaders cachedResponseHeaders -> r
+    java.io.InputStream cachedResponseBody -> s
+    boolean automaticallyReleaseConnectionToPool -> t
+    boolean connectionReleased -> u
+    void sendRequest() -> a
+    void initResponseSource() -> t
+    void sendSocketRequest() -> u
+    void connect() -> b
+    void connected(com.squareup.okhttp.Connection) -> a
+    void writingRequestHeaders() -> c
+    void setResponse(com.squareup.okhttp.internal.http.ResponseHeaders,java.io.InputStream) -> a
+    boolean hasRequestBody() -> d
+    java.io.OutputStream getRequestBody() -> e
+    boolean hasResponse() -> f
+    com.squareup.okhttp.internal.http.RequestHeaders getRequestHeaders() -> g
+    com.squareup.okhttp.internal.http.ResponseHeaders getResponseHeaders() -> h
+    int getResponseCode() -> i
+    java.io.InputStream getResponseBody() -> j
+    java.net.CacheResponse getCacheResponse() -> k
+    com.squareup.okhttp.Connection getConnection() -> l
+    boolean acceptCacheResponseType(java.net.CacheResponse) -> a
+    void maybeCache() -> v
+    void automaticallyReleaseConnectionToPool() -> m
+    void release(boolean) -> a
+    void initContentStream(java.io.InputStream) -> a
+    boolean hasResponseBody() -> n
+    void prepareRawRequestHeaders() -> w
+    java.lang.String getRequestLine() -> o
+    java.lang.String requestString() -> x
+    java.lang.String requestPath(java.net.URL) -> a
+    boolean includeAuthorityInRequestLine() -> p
+    java.lang.String getDefaultUserAgent() -> q
+    java.lang.String getOriginAddress(java.net.URL) -> b
+    void readResponse() -> r
+    com.squareup.okhttp.TunnelRequest getTunnelConfig() -> s
+    void receiveHeaders(com.squareup.okhttp.internal.http.RawHeaders) -> a
+com.squareup.okhttp.internal.http.HttpEngine$1 -> com.a.a.a.a.i:
+    java.util.Map getHeaders() -> getHeaders
+    java.io.InputStream getBody() -> getBody
+com.squareup.okhttp.internal.http.HttpTransport -> com.a.a.a.a.j:
+    com.squareup.okhttp.internal.http.HttpEngine httpEngine -> a
+    java.io.InputStream socketIn -> b
+    java.io.OutputStream socketOut -> c
+    java.io.OutputStream requestOut -> d
+    java.io.OutputStream createRequestBody() -> a
+    void flushRequest() -> b
+    void writeRequestBody(com.squareup.okhttp.internal.http.RetryableOutputStream) -> a
+    void writeRequestHeaders() -> c
+    com.squareup.okhttp.internal.http.ResponseHeaders readResponseHeaders() -> d
+    boolean makeReusable(boolean,java.io.OutputStream,java.io.InputStream) -> a
+    boolean discardStream(com.squareup.okhttp.internal.http.HttpEngine,java.io.InputStream) -> b
+    java.io.InputStream getTransferStream(java.net.CacheRequest) -> a
+    boolean access$200(com.squareup.okhttp.internal.http.HttpEngine,java.io.InputStream) -> a
+    com.squareup.okhttp.internal.http.HttpEngine access$300(com.squareup.okhttp.internal.http.HttpTransport) -> a
+    java.io.InputStream access$400(com.squareup.okhttp.internal.http.HttpTransport) -> b
+com.squareup.okhttp.internal.http.HttpTransport$1 -> com.a.a.a.a.k:
+com.squareup.okhttp.internal.http.HttpTransport$ChunkedInputStream -> com.a.a.a.a.l:
+    com.squareup.okhttp.internal.http.HttpTransport transport -> d
+    int bytesRemainingInChunk -> e
+    boolean hasMoreChunks -> f
+    int read(byte[],int,int) -> read
+    void readChunkSize() -> c
+    int available() -> available
+    void close() -> close
+com.squareup.okhttp.internal.http.HttpTransport$ChunkedOutputStream -> com.a.a.a.a.m:
+    byte[] CRLF -> b
+    byte[] HEX_DIGITS -> c
+    byte[] FINAL_CHUNK -> d
+    byte[] hex -> e
+    java.io.OutputStream socketOut -> f
+    int maxChunkLength -> g
+    java.io.ByteArrayOutputStream bufferedChunk -> h
+    int dataLength(int) -> a
+    void write(byte[],int,int) -> write
+    void writeHex(int) -> b
+    void flush() -> flush
+    void close() -> close
+    void writeBufferedChunkToSocket() -> c
+com.squareup.okhttp.internal.http.HttpTransport$FixedLengthInputStream -> com.a.a.a.a.n:
+    int bytesRemaining -> d
+    int read(byte[],int,int) -> read
+    int available() -> available
+    void close() -> close
+com.squareup.okhttp.internal.http.HttpTransport$FixedLengthOutputStream -> com.a.a.a.a.o:
+    java.io.OutputStream socketOut -> b
+    int bytesRemaining -> c
+    void write(byte[],int,int) -> write
+    void flush() -> flush
+    void close() -> close
+com.squareup.okhttp.internal.http.HttpURLConnectionImpl -> com.a.a.a.a.p:
+    boolean followProtocolRedirects -> k
+    java.net.Proxy requestedProxy -> a
+    java.net.ProxySelector proxySelector -> b
+    java.net.CookieHandler cookieHandler -> c
+    com.squareup.okhttp.internal.http.OkResponseCache responseCache -> d
+    com.squareup.okhttp.ConnectionPool connectionPool -> e
+    javax.net.ssl.SSLSocketFactory sslSocketFactory -> f
+    javax.net.ssl.HostnameVerifier hostnameVerifier -> g
+    java.util.Set failedRoutes -> h
+    com.squareup.okhttp.internal.http.RawHeaders rawRequestHeaders -> l
+    int redirectionCount -> m
+    com.squareup.okhttp.internal.FaultRecoveringOutputStream faultRecoveringRequestBody -> n
+    java.io.IOException httpEngineFailure -> i
+    com.squareup.okhttp.internal.http.HttpEngine httpEngine -> j
+    java.util.Set getFailedRoutes() -> a
+    void connect() -> connect
+    void disconnect() -> disconnect
+    java.io.InputStream getErrorStream() -> getErrorStream
+    java.lang.String getHeaderField(int) -> getHeaderField
+    java.lang.String getHeaderField(java.lang.String) -> getHeaderField
+    java.lang.String getHeaderFieldKey(int) -> getHeaderFieldKey
+    java.util.Map getHeaderFields() -> getHeaderFields
+    java.util.Map getRequestProperties() -> getRequestProperties
+    java.io.InputStream getInputStream() -> getInputStream
+    java.io.OutputStream getOutputStream() -> getOutputStream
+    java.security.Permission getPermission() -> getPermission
+    java.lang.String getRequestProperty(java.lang.String) -> getRequestProperty
+    void initHttpEngine() -> f
+    java.net.HttpURLConnection getHttpConnectionToCache() -> b
+    com.squareup.okhttp.internal.http.HttpEngine newHttpEngine(java.lang.String,com.squareup.okhttp.internal.http.RawHeaders,com.squareup.okhttp.Connection,com.squareup.okhttp.internal.http.RetryableOutputStream) -> a
+    com.squareup.okhttp.internal.http.HttpEngine getResponse() -> g
+    boolean execute(boolean) -> a
+    boolean handleFailure(java.io.IOException) -> a
+    boolean isRecoverable(java.io.IOException) -> b
+    com.squareup.okhttp.internal.http.HttpEngine getHttpEngine() -> c
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry processResponseHeaders() -> h
+    int getFixedContentLength() -> d
+    int getChunkLength() -> e
+    boolean usingProxy() -> usingProxy
+    java.lang.String getResponseMessage() -> getResponseMessage
+    int getResponseCode() -> getResponseCode
+    void setRequestProperty(java.lang.String,java.lang.String) -> setRequestProperty
+    void addRequestProperty(java.lang.String,java.lang.String) -> addRequestProperty
+    boolean access$000(com.squareup.okhttp.internal.http.HttpURLConnectionImpl,java.io.IOException) -> a
+com.squareup.okhttp.internal.http.HttpURLConnectionImpl$1 -> com.a.a.a.a.q:
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl this$0 -> b
+    java.io.OutputStream replacementStream(java.io.IOException) -> a
+com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry -> com.a.a.a.a.r:
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry NONE -> a
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry SAME_CONNECTION -> b
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry DIFFERENT_CONNECTION -> c
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry[] $VALUES -> d
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry[] values() -> values
+    com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry valueOf(java.lang.String) -> valueOf
+com.squareup.okhttp.internal.http.HttpsURLConnectionImpl -> com.a.a.a.a.s:
+    com.squareup.okhttp.internal.http.HttpsURLConnectionImpl$HttpUrlConnectionDelegate delegate -> a
+    java.lang.String getCipherSuite() -> getCipherSuite
+    java.security.cert.Certificate[] getLocalCertificates() -> getLocalCertificates
+    java.security.cert.Certificate[] getServerCertificates() -> getServerCertificates
+    java.security.Principal getPeerPrincipal() -> getPeerPrincipal
+    java.security.Principal getLocalPrincipal() -> getLocalPrincipal
+    com.squareup.okhttp.internal.http.HttpEngine getHttpEngine() -> a
+    javax.net.ssl.SSLSocket getSslSocket() -> b
+    void disconnect() -> disconnect
+    java.io.InputStream getErrorStream() -> getErrorStream
+    java.lang.String getRequestMethod() -> getRequestMethod
+    int getResponseCode() -> getResponseCode
+    java.lang.String getResponseMessage() -> getResponseMessage
+    void setRequestMethod(java.lang.String) -> setRequestMethod
+    boolean usingProxy() -> usingProxy
+    boolean getInstanceFollowRedirects() -> getInstanceFollowRedirects
+    void setInstanceFollowRedirects(boolean) -> setInstanceFollowRedirects
+    void connect() -> connect
+    boolean getAllowUserInteraction() -> getAllowUserInteraction
+    java.lang.Object getContent() -> getContent
+    java.lang.Object getContent(java.lang.Class[]) -> getContent
+    java.lang.String getContentEncoding() -> getContentEncoding
+    int getContentLength() -> getContentLength
+    java.lang.String getContentType() -> getContentType
+    long getDate() -> getDate
+    boolean getDefaultUseCaches() -> getDefaultUseCaches
+    boolean getDoInput() -> getDoInput
+    boolean getDoOutput() -> getDoOutput
+    long getExpiration() -> getExpiration
+    java.lang.String getHeaderField(int) -> getHeaderField
+    java.util.Map getHeaderFields() -> getHeaderFields
+    java.util.Map getRequestProperties() -> getRequestProperties
+    void addRequestProperty(java.lang.String,java.lang.String) -> addRequestProperty
+    java.lang.String getHeaderField(java.lang.String) -> getHeaderField
+    long getHeaderFieldDate(java.lang.String,long) -> getHeaderFieldDate
+    int getHeaderFieldInt(java.lang.String,int) -> getHeaderFieldInt
+    java.lang.String getHeaderFieldKey(int) -> getHeaderFieldKey
+    long getIfModifiedSince() -> getIfModifiedSince
+    java.io.InputStream getInputStream() -> getInputStream
+    long getLastModified() -> getLastModified
+    java.io.OutputStream getOutputStream() -> getOutputStream
+    java.security.Permission getPermission() -> getPermission
+    java.lang.String getRequestProperty(java.lang.String) -> getRequestProperty
+    java.net.URL getURL() -> getURL
+    boolean getUseCaches() -> getUseCaches
+    void setAllowUserInteraction(boolean) -> setAllowUserInteraction
+    void setDefaultUseCaches(boolean) -> setDefaultUseCaches
+    void setDoInput(boolean) -> setDoInput
+    void setDoOutput(boolean) -> setDoOutput
+    void setIfModifiedSince(long) -> setIfModifiedSince
+    void setRequestProperty(java.lang.String,java.lang.String) -> setRequestProperty
+    void setUseCaches(boolean) -> setUseCaches
+    void setConnectTimeout(int) -> setConnectTimeout
+    int getConnectTimeout() -> getConnectTimeout
+    void setReadTimeout(int) -> setReadTimeout
+    int getReadTimeout() -> getReadTimeout
+    java.lang.String toString() -> toString
+    void setFixedLengthStreamingMode(int) -> setFixedLengthStreamingMode
+    void setChunkedStreamingMode(int) -> setChunkedStreamingMode
+    void setHostnameVerifier(javax.net.ssl.HostnameVerifier) -> setHostnameVerifier
+    javax.net.ssl.HostnameVerifier getHostnameVerifier() -> getHostnameVerifier
+    void setSSLSocketFactory(javax.net.ssl.SSLSocketFactory) -> setSSLSocketFactory
+    javax.net.ssl.SSLSocketFactory getSSLSocketFactory() -> getSSLSocketFactory
+com.squareup.okhttp.internal.http.HttpsURLConnectionImpl$1 -> com.a.a.a.a.t:
+com.squareup.okhttp.internal.http.HttpsURLConnectionImpl$HttpUrlConnectionDelegate -> com.a.a.a.a.u:
+    com.squareup.okhttp.internal.http.HttpsURLConnectionImpl this$0 -> k
+    java.net.HttpURLConnection getHttpConnectionToCache() -> b
+    java.net.SecureCacheResponse getSecureCacheResponse() -> f
+com.squareup.okhttp.internal.http.HttpsURLConnectionImpl$HttpsEngine -> com.a.a.a.a.v:
+    javax.net.ssl.SSLSocket sslSocket -> i
+    void connected(com.squareup.okhttp.Connection) -> a
+    boolean acceptCacheResponseType(java.net.CacheResponse) -> a
+    boolean includeAuthorityInRequestLine() -> p
+    com.squareup.okhttp.TunnelRequest getTunnelConfig() -> s
+    javax.net.ssl.SSLSocket access$100(com.squareup.okhttp.internal.http.HttpsURLConnectionImpl$HttpsEngine) -> a
+com.squareup.okhttp.internal.http.OkResponseCache -> com.a.a.a.a.w:
+    java.net.CacheResponse get(java.net.URI,java.lang.String,java.util.Map) -> a
+    java.net.CacheRequest put(java.net.URI,java.net.URLConnection) -> a
+    void update(java.net.CacheResponse,java.net.HttpURLConnection) -> a
+    void trackConditionalCacheHit() -> a
+    void trackResponse(com.squareup.okhttp.ResponseSource) -> a
+com.squareup.okhttp.internal.http.OkResponseCacheAdapter -> com.a.a.a.a.x:
+    java.net.ResponseCache responseCache -> a
+    java.net.CacheResponse get(java.net.URI,java.lang.String,java.util.Map) -> a
+    java.net.CacheRequest put(java.net.URI,java.net.URLConnection) -> a
+    void update(java.net.CacheResponse,java.net.HttpURLConnection) -> a
+    void trackConditionalCacheHit() -> a
+    void trackResponse(com.squareup.okhttp.ResponseSource) -> a
+com.squareup.okhttp.internal.http.RawHeaders -> com.a.a.a.a.y:
+    java.util.Comparator FIELD_NAME_COMPARATOR -> a
+    java.util.List namesAndValues -> b
+    java.lang.String requestLine -> c
+    java.lang.String statusLine -> d
+    int httpMinorVersion -> e
+    int responseCode -> f
+    java.lang.String responseMessage -> g
+    void setRequestLine(java.lang.String) -> a
+    void setStatusLine(java.lang.String) -> b
+    void computeResponseStatusLineFromSpdyHeaders() -> a
+    void addSpdyRequestHeaders(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.String getStatusLine() -> b
+    int getHttpMinorVersion() -> c
+    int getResponseCode() -> d
+    java.lang.String getResponseMessage() -> e
+    void addLine(java.lang.String) -> c
+    void add(java.lang.String,java.lang.String) -> a
+    void addLenient(java.lang.String,java.lang.String) -> c
+    void removeAll(java.lang.String) -> d
+    void addAll(java.lang.String,java.util.List) -> a
+    void set(java.lang.String,java.lang.String) -> b
+    int length() -> f
+    java.lang.String getFieldName(int) -> a
+    java.lang.String getValue(int) -> b
+    java.lang.String get(java.lang.String) -> e
+    com.squareup.okhttp.internal.http.RawHeaders getAll(java.util.Set) -> a
+    byte[] toBytes() -> g
+    com.squareup.okhttp.internal.http.RawHeaders fromBytes(java.io.InputStream) -> a
+    void readHeaders(java.io.InputStream,com.squareup.okhttp.internal.http.RawHeaders) -> a
+    java.util.Map toMultimap(boolean) -> a
+    com.squareup.okhttp.internal.http.RawHeaders fromMultimap(java.util.Map,boolean) -> a
+    java.util.List toNameValueBlock() -> h
+    com.squareup.okhttp.internal.http.RawHeaders fromNameValueBlock(java.util.List) -> a
+com.squareup.okhttp.internal.http.RawHeaders$1 -> com.a.a.a.a.z:
+    int compare(java.lang.String,java.lang.String) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+com.squareup.okhttp.internal.http.RequestHeaders -> com.a.a.a.a.aa:
+    java.net.URI uri -> a
+    com.squareup.okhttp.internal.http.RawHeaders headers -> b
+    boolean noCache -> c
+    int maxAgeSeconds -> d
+    int maxStaleSeconds -> e
+    int minFreshSeconds -> f
+    boolean onlyIfCached -> g
+    boolean hasAuthorization -> h
+    int contentLength -> i
+    java.lang.String transferEncoding -> j
+    java.lang.String userAgent -> k
+    java.lang.String host -> l
+    java.lang.String connection -> m
+    java.lang.String acceptEncoding -> n
+    java.lang.String contentType -> o
+    java.lang.String ifModifiedSince -> p
+    java.lang.String ifNoneMatch -> q
+    java.lang.String proxyAuthorization -> r
+    boolean isChunked() -> a
+    boolean hasConnectionClose() -> b
+    com.squareup.okhttp.internal.http.RawHeaders getHeaders() -> c
+    boolean isNoCache() -> d
+    int getMaxAgeSeconds() -> e
+    int getMaxStaleSeconds() -> f
+    int getMinFreshSeconds() -> g
+    boolean isOnlyIfCached() -> h
+    boolean hasAuthorization() -> i
+    int getContentLength() -> j
+    java.lang.String getUserAgent() -> k
+    java.lang.String getHost() -> l
+    java.lang.String getConnection() -> m
+    java.lang.String getAcceptEncoding() -> n
+    java.lang.String getContentType() -> o
+    java.lang.String getProxyAuthorization() -> p
+    void setChunked() -> q
+    void setContentLength(int) -> a
+    void setUserAgent(java.lang.String) -> a
+    void setHost(java.lang.String) -> b
+    void setConnection(java.lang.String) -> c
+    void setAcceptEncoding(java.lang.String) -> d
+    void setContentType(java.lang.String) -> e
+    void setIfModifiedSince(java.util.Date) -> a
+    void setIfNoneMatch(java.lang.String) -> f
+    boolean hasConditions() -> r
+    void addCookies(java.util.Map) -> a
+    boolean access$002(com.squareup.okhttp.internal.http.RequestHeaders,boolean) -> a
+    int access$102(com.squareup.okhttp.internal.http.RequestHeaders,int) -> a
+    int access$202(com.squareup.okhttp.internal.http.RequestHeaders,int) -> b
+    int access$302(com.squareup.okhttp.internal.http.RequestHeaders,int) -> c
+    boolean access$402(com.squareup.okhttp.internal.http.RequestHeaders,boolean) -> b
+com.squareup.okhttp.internal.http.RequestHeaders$1 -> com.a.a.a.a.ab:
+    com.squareup.okhttp.internal.http.RequestHeaders this$0 -> a
+    void handle(java.lang.String,java.lang.String) -> a
+com.squareup.okhttp.internal.http.ResponseHeaders -> com.a.a.a.a.ac:
+    java.net.URI uri -> a
+    com.squareup.okhttp.internal.http.RawHeaders headers -> b
+    java.util.Date servedDate -> c
+    java.util.Date lastModified -> d
+    java.util.Date expires -> e
+    long sentRequestMillis -> f
+    long receivedResponseMillis -> g
+    boolean noCache -> h
+    boolean noStore -> i
+    int maxAgeSeconds -> j
+    int sMaxAgeSeconds -> k
+    boolean isPublic -> l
+    boolean mustRevalidate -> m
+    java.lang.String etag -> n
+    int ageSeconds -> o
+    java.util.Set varyFields -> p
+    java.lang.String contentEncoding -> q
+    java.lang.String transferEncoding -> r
+    int contentLength -> s
+    java.lang.String connection -> t
+    boolean isContentEncodingGzip() -> a
+    void stripContentEncoding() -> b
+    void stripContentLength() -> c
+    boolean isChunked() -> d
+    boolean hasConnectionClose() -> e
+    com.squareup.okhttp.internal.http.RawHeaders getHeaders() -> f
+    java.util.Set getVaryFields() -> g
+    int getContentLength() -> h
+    void setLocalTimestamps(long,long) -> a
+    void setResponseSource(com.squareup.okhttp.ResponseSource) -> a
+    long computeAge(long) -> a
+    long computeFreshnessLifetime() -> j
+    boolean isFreshnessLifetimeHeuristic() -> k
+    boolean isCacheable(com.squareup.okhttp.internal.http.RequestHeaders) -> a
+    boolean hasVaryAll() -> i
+    boolean varyMatches(java.util.Map,java.util.Map) -> a
+    com.squareup.okhttp.ResponseSource chooseResponseSource(long,com.squareup.okhttp.internal.http.RequestHeaders) -> a
+    boolean validate(com.squareup.okhttp.internal.http.ResponseHeaders) -> a
+    com.squareup.okhttp.internal.http.ResponseHeaders combine(com.squareup.okhttp.internal.http.ResponseHeaders) -> b
+    boolean isEndToEnd(java.lang.String) -> a
+    boolean access$002(com.squareup.okhttp.internal.http.ResponseHeaders,boolean) -> a
+    boolean access$102(com.squareup.okhttp.internal.http.ResponseHeaders,boolean) -> b
+    int access$202(com.squareup.okhttp.internal.http.ResponseHeaders,int) -> a
+    int access$302(com.squareup.okhttp.internal.http.ResponseHeaders,int) -> b
+    boolean access$402(com.squareup.okhttp.internal.http.ResponseHeaders,boolean) -> c
+    boolean access$502(com.squareup.okhttp.internal.http.ResponseHeaders,boolean) -> d
+com.squareup.okhttp.internal.http.ResponseHeaders$1 -> com.a.a.a.a.ad:
+    com.squareup.okhttp.internal.http.ResponseHeaders this$0 -> a
+    void handle(java.lang.String,java.lang.String) -> a
+com.squareup.okhttp.internal.http.RetryableOutputStream -> com.a.a.a.a.ae:
+    int limit -> b
+    java.io.ByteArrayOutputStream content -> c
+    void close() -> close
+    void write(byte[],int,int) -> write
+    int contentLength() -> c
+    void writeToSocket(java.io.OutputStream) -> a
+com.squareup.okhttp.internal.http.RouteSelector -> com.a.a.a.a.af:
+    com.squareup.okhttp.Address address -> a
+    java.net.URI uri -> b
+    java.net.ProxySelector proxySelector -> c
+    com.squareup.okhttp.ConnectionPool pool -> d
+    com.squareup.okhttp.internal.Dns dns -> e
+    java.util.Set failedRoutes -> f
+    java.net.Proxy lastProxy -> g
+    java.net.InetSocketAddress lastInetSocketAddress -> h
+    boolean hasNextProxy -> i
+    java.net.Proxy userSpecifiedProxy -> j
+    java.util.Iterator proxySelectorProxies -> k
+    java.net.InetAddress[] socketAddresses -> l
+    int nextSocketAddressIndex -> m
+    int socketPort -> n
+    int nextTlsMode -> o
+    java.util.List postponedRoutes -> p
+    boolean hasNext() -> a
+    com.squareup.okhttp.Connection next() -> b
+    void connectFailed(com.squareup.okhttp.Connection,java.io.IOException) -> a
+    void resetNextProxy(java.net.URI,java.net.Proxy) -> a
+    boolean hasNextProxy() -> c
+    java.net.Proxy nextProxy() -> d
+    void resetNextInetSocketAddress(java.net.Proxy) -> a
+    boolean hasNextInetSocketAddress() -> e
+    java.net.InetSocketAddress nextInetSocketAddress() -> f
+    void resetNextTlsMode() -> g
+    boolean hasNextTlsMode() -> h
+    int nextTlsMode() -> i
+    boolean hasNextPostponed() -> j
+    com.squareup.okhttp.Route nextPostponed() -> k
+com.squareup.okhttp.internal.http.SpdyTransport -> com.a.a.a.a.ag:
+    com.squareup.okhttp.internal.http.HttpEngine httpEngine -> a
+    com.squareup.okhttp.internal.spdy.SpdyConnection spdyConnection -> b
+    com.squareup.okhttp.internal.spdy.SpdyStream stream -> c
+    java.io.OutputStream createRequestBody() -> a
+    void writeRequestHeaders() -> c
+    void writeRequestBody(com.squareup.okhttp.internal.http.RetryableOutputStream) -> a
+    void flushRequest() -> b
+    com.squareup.okhttp.internal.http.ResponseHeaders readResponseHeaders() -> d
+    java.io.InputStream getTransferStream(java.net.CacheRequest) -> a
+    boolean makeReusable(boolean,java.io.OutputStream,java.io.InputStream) -> a
+com.squareup.okhttp.internal.http.Transport -> com.a.a.a.a.ah:
+    java.io.OutputStream createRequestBody() -> a
+    void writeRequestHeaders() -> c
+    void writeRequestBody(com.squareup.okhttp.internal.http.RetryableOutputStream) -> a
+    void flushRequest() -> b
+    com.squareup.okhttp.internal.http.ResponseHeaders readResponseHeaders() -> d
+    java.io.InputStream getTransferStream(java.net.CacheRequest) -> a
+    boolean makeReusable(boolean,java.io.OutputStream,java.io.InputStream) -> a
+com.squareup.okhttp.internal.http.UnknownLengthHttpInputStream -> com.a.a.a.a.ai:
+    boolean inputExhausted -> d
+    int read(byte[],int,int) -> read
+    int available() -> available
+    void close() -> close
+com.squareup.okhttp.internal.spdy.IncomingStreamHandler -> com.a.a.a.b.a:
+    com.squareup.okhttp.internal.spdy.IncomingStreamHandler REFUSE_INCOMING_STREAMS -> a
+    void receive(com.squareup.okhttp.internal.spdy.SpdyStream) -> a
+com.squareup.okhttp.internal.spdy.IncomingStreamHandler$1 -> com.a.a.a.b.b:
+    void receive(com.squareup.okhttp.internal.spdy.SpdyStream) -> a
+com.squareup.okhttp.internal.spdy.Ping -> com.a.a.a.b.c:
+    java.util.concurrent.CountDownLatch latch -> a
+    long sent -> b
+    long received -> c
+    void send() -> a
+    void receive() -> b
+    void cancel() -> c
+com.squareup.okhttp.internal.spdy.Settings -> com.a.a.a.b.d:
+    int set -> a
+    int persistValue -> b
+    int persisted -> c
+    int[] values -> d
+    void set(int,int,int) -> a
+    boolean isSet(int) -> a
+    int get(int) -> b
+    int flags(int) -> c
+    int getInitialWindowSize(int) -> d
+    boolean persistValue(int) -> e
+    boolean isPersisted(int) -> f
+    void merge(com.squareup.okhttp.internal.spdy.Settings) -> a
+com.squareup.okhttp.internal.spdy.SpdyConnection -> com.a.a.a.b.e:
+    java.util.concurrent.ExecutorService executor -> d
+    boolean client -> a
+    com.squareup.okhttp.internal.spdy.IncomingStreamHandler handler -> e
+    com.squareup.okhttp.internal.spdy.SpdyReader spdyReader -> f
+    com.squareup.okhttp.internal.spdy.SpdyWriter spdyWriter -> g
+    java.util.Map streams -> h
+    java.lang.String hostName -> i
+    int lastGoodStreamId -> j
+    int nextStreamId -> k
+    boolean shutdown -> l
+    long idleStartTimeNs -> m
+    java.util.Map pings -> n
+    int nextPingId -> o
+    com.squareup.okhttp.internal.spdy.Settings settings -> b
+    boolean $assertionsDisabled -> c
+    com.squareup.okhttp.internal.spdy.SpdyStream getStream(int) -> c
+    com.squareup.okhttp.internal.spdy.SpdyStream removeStream(int) -> a
+    void setIdle(boolean) -> a
+    boolean isIdle() -> a
+    long getIdleStartTimeNs() -> b
+    com.squareup.okhttp.internal.spdy.SpdyStream newStream(java.util.List,boolean,boolean) -> a
+    void writeFrame(byte[],int,int) -> a
+    void writeSynResetLater(int,int) -> a
+    void writeSynReset(int,int) -> b
+    void writeWindowUpdateLater(int,int) -> c
+    void writeWindowUpdate(int,int) -> d
+    void writePingLater(int,com.squareup.okhttp.internal.spdy.Ping) -> a
+    void writePing(int,com.squareup.okhttp.internal.spdy.Ping) -> b
+    com.squareup.okhttp.internal.spdy.Ping removePing(int) -> d
+    void flush() -> c
+    void shutdown(int) -> b
+    void close() -> close
+    void close(int,int) -> e
+    void access$500(com.squareup.okhttp.internal.spdy.SpdyConnection,int,com.squareup.okhttp.internal.spdy.Ping) -> a
+    com.squareup.okhttp.internal.spdy.SpdyReader access$700(com.squareup.okhttp.internal.spdy.SpdyConnection) -> a
+    void access$800(com.squareup.okhttp.internal.spdy.SpdyConnection,int,int) -> a
+    com.squareup.okhttp.internal.spdy.SpdyStream access$900(com.squareup.okhttp.internal.spdy.SpdyConnection,int) -> a
+    boolean access$1000(com.squareup.okhttp.internal.spdy.SpdyConnection) -> b
+    int access$1102(com.squareup.okhttp.internal.spdy.SpdyConnection,int) -> b
+    java.util.Map access$1200(com.squareup.okhttp.internal.spdy.SpdyConnection) -> c
+    java.lang.String access$1300(com.squareup.okhttp.internal.spdy.SpdyConnection) -> d
+    com.squareup.okhttp.internal.spdy.IncomingStreamHandler access$1400(com.squareup.okhttp.internal.spdy.SpdyConnection) -> e
+    java.util.concurrent.ExecutorService access$1500() -> d
+    void access$1600(com.squareup.okhttp.internal.spdy.SpdyConnection,int,com.squareup.okhttp.internal.spdy.Ping) -> b
+    com.squareup.okhttp.internal.spdy.Ping access$1700(com.squareup.okhttp.internal.spdy.SpdyConnection,int) -> c
+    boolean access$1002(com.squareup.okhttp.internal.spdy.SpdyConnection,boolean) -> a
+com.squareup.okhttp.internal.spdy.SpdyConnection$1 -> com.a.a.a.b.f:
+    int val$streamId -> a
+    int val$statusCode -> b
+    com.squareup.okhttp.internal.spdy.SpdyConnection this$0 -> c
+    void execute() -> a
+com.squareup.okhttp.internal.spdy.SpdyConnection$2 -> com.a.a.a.b.g:
+    int val$streamId -> a
+    int val$deltaWindowSize -> b
+    com.squareup.okhttp.internal.spdy.SpdyConnection this$0 -> c
+    void execute() -> a
+com.squareup.okhttp.internal.spdy.SpdyConnection$3 -> com.a.a.a.b.h:
+    int val$streamId -> a
+    com.squareup.okhttp.internal.spdy.Ping val$ping -> b
+    com.squareup.okhttp.internal.spdy.SpdyConnection this$0 -> c
+    void execute() -> a
+com.squareup.okhttp.internal.spdy.SpdyConnection$Builder -> com.a.a.a.b.i:
+    java.lang.String hostName -> b
+    java.io.InputStream in -> c
+    java.io.OutputStream out -> d
+    com.squareup.okhttp.internal.spdy.IncomingStreamHandler handler -> e
+    boolean client -> a
+    com.squareup.okhttp.internal.spdy.SpdyConnection build() -> a
+    com.squareup.okhttp.internal.spdy.IncomingStreamHandler access$000(com.squareup.okhttp.internal.spdy.SpdyConnection$Builder) -> a
+    java.io.InputStream access$100(com.squareup.okhttp.internal.spdy.SpdyConnection$Builder) -> b
+    java.io.OutputStream access$200(com.squareup.okhttp.internal.spdy.SpdyConnection$Builder) -> c
+    java.lang.String access$300(com.squareup.okhttp.internal.spdy.SpdyConnection$Builder) -> d
+com.squareup.okhttp.internal.spdy.SpdyConnection$Reader -> com.a.a.a.b.j:
+    com.squareup.okhttp.internal.spdy.SpdyConnection this$0 -> a
+    void run() -> run
+    void data(int,int,java.io.InputStream,int) -> a
+    void synStream(int,int,int,int,int,java.util.List) -> a
+    void synReply(int,int,java.util.List) -> a
+    void headers(int,int,java.util.List) -> b
+    void rstStream(int,int,int) -> a
+    void settings(int,com.squareup.okhttp.internal.spdy.Settings) -> a
+    void noop() -> a
+    void ping(int,int) -> a
+    void goAway(int,int,int) -> b
+    void windowUpdate(int,int,int) -> c
+com.squareup.okhttp.internal.spdy.SpdyConnection$Reader$1 -> com.a.a.a.b.k:
+    com.squareup.okhttp.internal.spdy.SpdyStream val$synStream -> a
+    com.squareup.okhttp.internal.spdy.SpdyConnection$Reader this$1 -> b
+    void execute() -> a
+com.squareup.okhttp.internal.spdy.SpdyReader -> com.a.a.a.b.l:
+    byte[] DICTIONARY -> a
+    java.io.DataInputStream in -> b
+    java.io.DataInputStream nameValueBlockIn -> c
+    int compressedLimit -> d
+    boolean nextFrame(com.squareup.okhttp.internal.spdy.SpdyReader$Handler) -> a
+    void readSynStream(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> a
+    void readSynReply(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> b
+    void readRstStream(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> c
+    void readHeaders(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> d
+    void readWindowUpdate(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> e
+    java.io.DataInputStream newNameValueBlockStream() -> a
+    java.util.List readNameValueBlock(int) -> a
+    java.lang.String readString() -> b
+    void readPing(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> f
+    void readGoAway(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> g
+    void readSettings(com.squareup.okhttp.internal.spdy.SpdyReader$Handler,int,int) -> h
+    java.io.IOException ioException(java.lang.String,java.lang.Object[]) -> a
+    void close() -> close
+    int access$000(com.squareup.okhttp.internal.spdy.SpdyReader) -> a
+    java.io.DataInputStream access$100(com.squareup.okhttp.internal.spdy.SpdyReader) -> b
+    int access$020(com.squareup.okhttp.internal.spdy.SpdyReader,int) -> a
+com.squareup.okhttp.internal.spdy.SpdyReader$1 -> com.a.a.a.b.m:
+    com.squareup.okhttp.internal.spdy.SpdyReader this$0 -> a
+    int read() -> read
+    int read(byte[],int,int) -> read
+    void close() -> close
+com.squareup.okhttp.internal.spdy.SpdyReader$2 -> com.a.a.a.b.n:
+    com.squareup.okhttp.internal.spdy.SpdyReader this$0 -> a
+    int inflate(byte[],int,int) -> inflate
+com.squareup.okhttp.internal.spdy.SpdyReader$Handler -> com.a.a.a.b.o:
+    void data(int,int,java.io.InputStream,int) -> a
+    void synStream(int,int,int,int,int,java.util.List) -> a
+    void synReply(int,int,java.util.List) -> a
+    void headers(int,int,java.util.List) -> b
+    void rstStream(int,int,int) -> a
+    void settings(int,com.squareup.okhttp.internal.spdy.Settings) -> a
+    void noop() -> a
+    void ping(int,int) -> a
+    void goAway(int,int,int) -> b
+    void windowUpdate(int,int,int) -> c
+com.squareup.okhttp.internal.spdy.SpdyStream -> com.a.a.a.b.p:
+    java.lang.String[] STATUS_CODE_NAMES -> b
+    int id -> c
+    com.squareup.okhttp.internal.spdy.SpdyConnection connection -> d
+    int priority -> e
+    int slot -> f
+    long readTimeoutMillis -> g
+    int writeWindowSize -> h
+    java.util.List requestHeaders -> i
+    java.util.List responseHeaders -> j
+    com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataInputStream in -> k
+    com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataOutputStream out -> l
+    int rstStatusCode -> m
+    boolean $assertionsDisabled -> a
+    boolean isOpen() -> a
+    boolean isLocallyInitiated() -> b
+    java.util.List getResponseHeaders() -> c
+    void setReadTimeout(long) -> a
+    java.io.InputStream getInputStream() -> d
+    java.io.OutputStream getOutputStream() -> e
+    void close(int) -> a
+    void closeLater(int) -> b
+    boolean closeInternal(int) -> e
+    void receiveReply(java.util.List) -> a
+    void receiveHeaders(java.util.List) -> b
+    void receiveData(java.io.InputStream,int) -> a
+    void receiveFin() -> f
+    void receiveRstStream(int) -> c
+    void setSettings(com.squareup.okhttp.internal.spdy.Settings) -> b
+    void receiveSettings(com.squareup.okhttp.internal.spdy.Settings) -> a
+    void receiveWindowUpdate(int) -> d
+    java.lang.String rstStatusString() -> g
+    void cancelStreamIfNecessary() -> h
+    int access$700(com.squareup.okhttp.internal.spdy.SpdyStream) -> a
+    com.squareup.okhttp.internal.spdy.SpdyConnection access$800(com.squareup.okhttp.internal.spdy.SpdyStream) -> b
+    long access$900(com.squareup.okhttp.internal.spdy.SpdyStream) -> c
+    int access$1000(com.squareup.okhttp.internal.spdy.SpdyStream) -> d
+    void access$1100(com.squareup.okhttp.internal.spdy.SpdyStream) -> e
+    java.lang.String access$1200(com.squareup.okhttp.internal.spdy.SpdyStream) -> f
+    int access$1300(com.squareup.okhttp.internal.spdy.SpdyStream) -> g
+com.squareup.okhttp.internal.spdy.SpdyStream$1 -> com.a.a.a.b.q:
+com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataInputStream -> com.a.a.a.b.r:
+    byte[] buffer -> c
+    int pos -> d
+    int limit -> e
+    boolean closed -> f
+    boolean finished -> g
+    int unacknowledgedBytes -> h
+    boolean $assertionsDisabled -> a
+    com.squareup.okhttp.internal.spdy.SpdyStream this$0 -> b
+    int available() -> available
+    int read() -> read
+    int read(byte[],int,int) -> read
+    void waitUntilReadable() -> a
+    void receive(java.io.InputStream,int) -> a
+    void close() -> close
+    void checkNotClosed() -> b
+    boolean access$202(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataInputStream,boolean) -> a
+    boolean access$200(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataInputStream) -> a
+    boolean access$400(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataInputStream) -> b
+com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataOutputStream -> com.a.a.a.b.s:
+    byte[] buffer -> c
+    int pos -> d
+    boolean closed -> e
+    boolean finished -> f
+    int unacknowledgedBytes -> g
+    boolean $assertionsDisabled -> a
+    com.squareup.okhttp.internal.spdy.SpdyStream this$0 -> b
+    void write(int) -> write
+    void write(byte[],int,int) -> write
+    void flush() -> flush
+    void close() -> close
+    void writeFrame(boolean) -> a
+    void waitUntilWritable(int,boolean) -> a
+    void checkNotClosed() -> a
+    boolean access$302(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataOutputStream,boolean) -> a
+    boolean access$300(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataOutputStream) -> a
+    boolean access$500(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataOutputStream) -> b
+    int access$620(com.squareup.okhttp.internal.spdy.SpdyStream$SpdyDataOutputStream,int) -> a
+com.squareup.okhttp.internal.spdy.SpdyWriter -> com.a.a.a.b.t:
+    java.io.DataOutputStream out -> a
+    java.io.ByteArrayOutputStream nameValueBlockBuffer -> b
+    java.io.DataOutputStream nameValueBlockOut -> c
+    void synStream(int,int,int,int,int,java.util.List) -> a
+    void rstStream(int,int) -> a
+    void writeNameValueBlockToBuffer(java.util.List) -> a
+    void ping(int,int) -> b
+    void goAway(int,int,int) -> a
+    void windowUpdate(int,int) -> c
+    void close() -> close
+com.varutra.owasp.kalp.OwaspLoadingActivity -> com.varutra.owasp.kalp.OwaspLoadingActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+org.apache.cordova.AccelListener -> org.apache.cordova.AccelListener:
+    int STOPPED -> a
+    int STARTING -> b
+    int RUNNING -> c
+    int ERROR_FAILED_TO_START -> d
+    float x -> e
+    float y -> f
+    float z -> g
+    long timestamp -> h
+    int status -> i
+    int accuracy -> j
+    android.hardware.SensorManager sensorManager -> k
+    android.hardware.Sensor mSensor -> l
+    org.apache.cordova.api.CallbackContext callbackContext -> m
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    int start() -> c
+    void stop() -> d
+    void timeout() -> e
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onReset() -> b
+    void fail(int,java.lang.String) -> a
+    void win() -> f
+    void setStatus(int) -> a
+    org.json.JSONObject getAccelerationJSON() -> g
+    void access$000(org.apache.cordova.AccelListener) -> a
+org.apache.cordova.AccelListener$1 -> org.apache.cordova.a:
+    org.apache.cordova.AccelListener this$0 -> a
+    void run() -> run
+org.apache.cordova.App -> org.apache.cordova.App:
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void clearCache() -> c
+    void loadUrl(java.lang.String,org.json.JSONObject) -> a
+    void clearHistory() -> d
+    void backHistory() -> e
+    void overrideBackbutton(boolean) -> a
+    void overrideButton(java.lang.String,boolean) -> a
+    void exitApp() -> f
+org.apache.cordova.App$1 -> org.apache.cordova.b:
+    org.apache.cordova.App this$0 -> a
+    void run() -> run
+org.apache.cordova.App$2 -> org.apache.cordova.c:
+    org.apache.cordova.App this$0 -> a
+    void run() -> run
+org.apache.cordova.AudioHandler -> org.apache.cordova.AudioHandler:
+    java.lang.String TAG -> a
+    java.util.HashMap players -> b
+    java.util.ArrayList pausedForPhone -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> a
+    boolean release(java.lang.String) -> g
+    void startRecordingAudio(java.lang.String,java.lang.String) -> a
+    void stopRecordingAudio(java.lang.String) -> a
+    void startPlayingAudio(java.lang.String,java.lang.String) -> b
+    void seekToAudio(java.lang.String,int) -> a
+    void pausePlayingAudio(java.lang.String) -> b
+    void stopPlayingAudio(java.lang.String) -> c
+    float getCurrentPositionAudio(java.lang.String) -> d
+    float getDurationAudio(java.lang.String,java.lang.String) -> c
+    void setVolume(java.lang.String,float) -> a
+org.apache.cordova.AudioPlayer -> org.apache.cordova.AudioPlayer:
+    int MEDIA_STATE -> a
+    int MEDIA_DURATION -> b
+    int MEDIA_POSITION -> c
+    int MEDIA_ERROR -> d
+    int MEDIA_ERR_NONE_ACTIVE -> e
+    int MEDIA_ERR_ABORTED -> f
+    int MEDIA_ERR_NETWORK -> g
+    int MEDIA_ERR_DECODE -> h
+    int MEDIA_ERR_NONE_SUPPORTED -> i
+    org.apache.cordova.AudioHandler handler -> j
+    java.lang.String id -> k
+    org.apache.cordova.AudioPlayer$MODE mode -> l
+    org.apache.cordova.AudioPlayer$STATE state -> m
+    java.lang.String audioFile -> n
+    float duration -> o
+    android.media.MediaRecorder recorder -> p
+    java.lang.String tempFile -> q
+    android.media.MediaPlayer player -> r
+    boolean prepareOnly -> s
+    int seekOnPrepared -> t
+    void destroy() -> a
+    void startRecording(java.lang.String) -> a
+    void moveFile(java.lang.String) -> b
+    void stopRecording() -> b
+    void startPlaying(java.lang.String) -> c
+    void seekToPlaying(int) -> a
+    void pausePlaying() -> c
+    void stopPlaying() -> d
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+    long getCurrentPosition() -> e
+    boolean isStreaming(java.lang.String) -> d
+    float getDuration(java.lang.String) -> e
+    void onPrepared(android.media.MediaPlayer) -> onPrepared
+    float getDurationInSeconds() -> g
+    boolean onError(android.media.MediaPlayer,int,int) -> onError
+    void setState(org.apache.cordova.AudioPlayer$STATE) -> a
+    void setMode(org.apache.cordova.AudioPlayer$MODE) -> a
+    int getState() -> f
+    void setVolume(float) -> a
+    boolean playMode() -> h
+    boolean readyPlayer(java.lang.String) -> f
+    void loadAudioFile(java.lang.String) -> g
+org.apache.cordova.AudioPlayer$1 -> org.apache.cordova.d:
+    int[] $SwitchMap$org$apache$cordova$AudioPlayer$MODE -> a
+    int[] $SwitchMap$org$apache$cordova$AudioPlayer$STATE -> b
+org.apache.cordova.AudioPlayer$MODE -> org.apache.cordova.AudioPlayer$MODE:
+    org.apache.cordova.AudioPlayer$MODE NONE -> a
+    org.apache.cordova.AudioPlayer$MODE PLAY -> b
+    org.apache.cordova.AudioPlayer$MODE RECORD -> c
+    org.apache.cordova.AudioPlayer$MODE[] $VALUES -> d
+    org.apache.cordova.AudioPlayer$MODE[] values() -> values
+    org.apache.cordova.AudioPlayer$MODE valueOf(java.lang.String) -> valueOf
+org.apache.cordova.AudioPlayer$STATE -> org.apache.cordova.AudioPlayer$STATE:
+    org.apache.cordova.AudioPlayer$STATE MEDIA_NONE -> a
+    org.apache.cordova.AudioPlayer$STATE MEDIA_STARTING -> b
+    org.apache.cordova.AudioPlayer$STATE MEDIA_RUNNING -> c
+    org.apache.cordova.AudioPlayer$STATE MEDIA_PAUSED -> d
+    org.apache.cordova.AudioPlayer$STATE MEDIA_STOPPED -> e
+    org.apache.cordova.AudioPlayer$STATE MEDIA_LOADING -> f
+    org.apache.cordova.AudioPlayer$STATE[] $VALUES -> g
+    org.apache.cordova.AudioPlayer$STATE[] values() -> values
+    org.apache.cordova.AudioPlayer$STATE valueOf(java.lang.String) -> valueOf
+org.apache.cordova.AuthenticationToken -> org.apache.cordova.AuthenticationToken:
+    java.lang.String userName -> a
+    java.lang.String password -> b
+    java.lang.String getUserName() -> a
+    java.lang.String getPassword() -> b
+org.apache.cordova.BatteryListener -> org.apache.cordova.BatteryListener:
+    android.content.BroadcastReceiver receiver -> a
+    org.apache.cordova.api.CallbackContext batteryCallbackContext -> b
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    void removeBatteryListener() -> c
+    org.json.JSONObject getBatteryInfo(android.content.Intent) -> b
+    void updateBatteryInfo(android.content.Intent) -> c
+    void sendUpdate(org.json.JSONObject,boolean) -> a
+    void access$000(org.apache.cordova.BatteryListener,android.content.Intent) -> a
+org.apache.cordova.BatteryListener$1 -> org.apache.cordova.e:
+    org.apache.cordova.BatteryListener this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.BuildConfig -> org.apache.cordova.BuildConfig:
+org.apache.cordova.CameraLauncher -> org.apache.cordova.CameraLauncher:
+    int mQuality -> b
+    int targetWidth -> c
+    int targetHeight -> d
+    android.net.Uri imageUri -> e
+    int encodingType -> f
+    int mediaType -> g
+    boolean saveToPhotoAlbum -> h
+    boolean correctOrientation -> i
+    org.apache.cordova.api.CallbackContext callbackContext -> a
+    int numPics -> j
+    android.media.MediaScannerConnection conn -> k
+    android.net.Uri scanMe -> l
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void takePicture(int,int) -> a
+    java.io.File createCaptureFile(int) -> a
+    void getImage(int,int) -> b
+    void onActivityResult(int,int,android.content.Intent) -> a
+    int getImageOrientation(android.net.Uri) -> a
+    android.graphics.Bitmap getRotatedBitmap(int,android.graphics.Bitmap,org.apache.cordova.ExifHelper) -> a
+    void writeUncompressedImage(android.net.Uri) -> b
+    android.net.Uri getUriFromMediaStore() -> c
+    android.graphics.Bitmap getScaledBitmap(java.lang.String) -> b
+    int[] calculateAspectRatio(int,int) -> c
+    int calculateSampleSize(int,int,int,int) -> a
+    android.database.Cursor queryImgDB(android.net.Uri) -> c
+    void cleanup(int,android.net.Uri,android.net.Uri,android.graphics.Bitmap) -> a
+    void checkForDuplicateImage(int) -> b
+    android.net.Uri whichContentStore() -> d
+    void processPicture(android.graphics.Bitmap) -> a
+    void failPicture(java.lang.String) -> a
+    void scanForGallery(android.net.Uri) -> d
+    void onMediaScannerConnected() -> onMediaScannerConnected
+    void onScanCompleted(java.lang.String,android.net.Uri) -> onScanCompleted
+org.apache.cordova.Capture -> org.apache.cordova.Capture:
+    org.apache.cordova.api.CallbackContext callbackContext -> a
+    long limit -> b
+    double duration -> c
+    org.json.JSONArray results -> d
+    int numPics -> e
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    org.json.JSONObject getFormatData(java.lang.String,java.lang.String) -> a
+    org.json.JSONObject getImageData(java.lang.String,org.json.JSONObject) -> a
+    org.json.JSONObject getAudioVideoData(java.lang.String,org.json.JSONObject,boolean) -> a
+    void captureAudio() -> c
+    void captureImage() -> d
+    void captureVideo(double) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    org.json.JSONObject createMediaFile(android.net.Uri) -> a
+    org.json.JSONObject createErrorObject(int,java.lang.String) -> a
+    void fail(org.json.JSONObject) -> a
+    android.database.Cursor queryImgDB(android.net.Uri) -> b
+    void checkForDuplicateImage() -> e
+    android.net.Uri whichContentStore() -> f
+org.apache.cordova.CompassListener -> org.apache.cordova.CompassListener:
+    int STOPPED -> a
+    int STARTING -> b
+    int RUNNING -> c
+    int ERROR_FAILED_TO_START -> d
+    long TIMEOUT -> e
+    int status -> f
+    float heading -> g
+    long timeStamp -> h
+    long lastAccessTime -> i
+    android.hardware.SensorManager sensorManager -> k
+    android.hardware.Sensor mSensor -> j
+    org.apache.cordova.api.CallbackContext callbackContext -> l
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    int start() -> c
+    void stop() -> d
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void timeout() -> h
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    int getStatus() -> e
+    float getHeading() -> f
+    void setTimeout(long) -> a
+    long getTimeout() -> g
+    void setStatus(int) -> a
+    org.json.JSONObject getCompassHeading() -> i
+    void access$000(org.apache.cordova.CompassListener) -> a
+org.apache.cordova.CompassListener$1 -> org.apache.cordova.f:
+    org.apache.cordova.CompassListener this$0 -> a
+    void run() -> run
+org.apache.cordova.Config -> org.apache.cordova.Config:
+    java.util.ArrayList whiteList -> a
+    java.util.HashMap whiteListCache -> b
+    java.lang.String startUrl -> c
+    org.apache.cordova.Config self -> d
+    void init(android.app.Activity) -> a
+    void _addWhiteListEntry(java.lang.String,boolean) -> a
+    boolean isUrlWhiteListed(java.lang.String) -> a
+org.apache.cordova.ContactAccessor -> org.apache.cordova.ContactAccessor:
+    java.lang.String LOG_TAG -> a
+    org.apache.cordova.api.CordovaInterface mApp -> b
+    android.webkit.WebView mView -> c
+    boolean isRequired(java.lang.String,java.util.HashMap) -> a
+    java.util.HashMap buildPopulationSet(org.json.JSONArray) -> a
+    java.lang.String getJsonString(org.json.JSONObject,java.lang.String) -> a
+    java.lang.String save(org.json.JSONObject) -> a
+    org.json.JSONArray search(org.json.JSONArray,org.json.JSONObject) -> a
+    org.json.JSONObject getContactById(java.lang.String) -> a
+    boolean remove(java.lang.String) -> b
+org.apache.cordova.ContactAccessor$WhereOptions -> org.apache.cordova.g:
+    java.lang.String where -> b
+    java.lang.String[] whereArgs -> c
+    org.apache.cordova.ContactAccessor this$0 -> a
+    void setWhere(java.lang.String) -> a
+    java.lang.String getWhere() -> a
+    void setWhereArgs(java.lang.String[]) -> a
+    java.lang.String[] getWhereArgs() -> b
+org.apache.cordova.ContactAccessorSdk5 -> org.apache.cordova.ContactAccessorSdk5:
+    java.util.Map dbMap -> d
+    org.json.JSONArray search(org.json.JSONArray,org.json.JSONObject) -> a
+    org.json.JSONObject getContactById(java.lang.String) -> a
+    org.json.JSONArray populateContactArray(int,java.util.HashMap,android.database.Cursor) -> a
+    org.apache.cordova.ContactAccessor$WhereOptions buildIdClause(java.util.Set,java.lang.String) -> a
+    org.json.JSONObject populateContact(org.json.JSONObject,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray,org.json.JSONArray) -> a
+    org.apache.cordova.ContactAccessor$WhereOptions buildWhereClause(org.json.JSONArray,java.lang.String) -> a
+    boolean isWildCardSearch(org.json.JSONArray) -> b
+    org.json.JSONObject organizationQuery(android.database.Cursor) -> a
+    org.json.JSONObject addressQuery(android.database.Cursor) -> b
+    org.json.JSONObject nameQuery(android.database.Cursor) -> c
+    org.json.JSONObject phoneQuery(android.database.Cursor) -> d
+    org.json.JSONObject emailQuery(android.database.Cursor) -> e
+    org.json.JSONObject imQuery(android.database.Cursor) -> f
+    org.json.JSONObject websiteQuery(android.database.Cursor) -> g
+    org.json.JSONObject photoQuery(android.database.Cursor,java.lang.String) -> a
+    java.lang.String save(org.json.JSONObject) -> a
+    java.lang.String modifyContact(java.lang.String,org.json.JSONObject,java.lang.String,java.lang.String) -> a
+    void insertWebsite(java.util.ArrayList,org.json.JSONObject) -> a
+    void insertIm(java.util.ArrayList,org.json.JSONObject) -> b
+    void insertOrganization(java.util.ArrayList,org.json.JSONObject) -> c
+    void insertAddress(java.util.ArrayList,org.json.JSONObject) -> d
+    void insertEmail(java.util.ArrayList,org.json.JSONObject) -> e
+    void insertPhone(java.util.ArrayList,org.json.JSONObject) -> f
+    void insertPhoto(java.util.ArrayList,org.json.JSONObject) -> g
+    byte[] getPhotoBytes(java.lang.String) -> c
+    java.io.InputStream getPathFromUri(java.lang.String) -> d
+    java.lang.String createNewContact(org.json.JSONObject,java.lang.String,java.lang.String) -> a
+    boolean remove(java.lang.String) -> b
+    int getPhoneType(java.lang.String) -> e
+    java.lang.String getPhoneType(int) -> a
+    int getContactType(java.lang.String) -> f
+    java.lang.String getContactType(int) -> b
+    int getOrgType(java.lang.String) -> g
+    java.lang.String getOrgType(int) -> c
+    int getAddressType(java.lang.String) -> h
+    java.lang.String getAddressType(int) -> d
+    int getImType(java.lang.String) -> i
+org.apache.cordova.ContactManager -> org.apache.cordova.ContactManager:
+    org.apache.cordova.ContactAccessor contactAccessor -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    org.apache.cordova.ContactAccessor access$000(org.apache.cordova.ContactManager) -> a
+org.apache.cordova.ContactManager$1 -> org.apache.cordova.h:
+    org.json.JSONArray val$filter -> a
+    org.json.JSONObject val$options -> b
+    org.apache.cordova.api.CallbackContext val$callbackContext -> c
+    org.apache.cordova.ContactManager this$0 -> d
+    void run() -> run
+org.apache.cordova.ContactManager$2 -> org.apache.cordova.i:
+    org.json.JSONObject val$contact -> a
+    org.apache.cordova.api.CallbackContext val$callbackContext -> b
+    org.apache.cordova.ContactManager this$0 -> c
+    void run() -> run
+org.apache.cordova.ContactManager$3 -> org.apache.cordova.j:
+    java.lang.String val$contactId -> a
+    org.apache.cordova.api.CallbackContext val$callbackContext -> b
+    org.apache.cordova.ContactManager this$0 -> c
+    void run() -> run
+org.apache.cordova.CordovaActivity -> org.apache.cordova.CordovaActivity:
+    java.lang.String TAG -> a
+    org.apache.cordova.CordovaWebView appView -> b
+    android.widget.LinearLayout root -> c
+    boolean cancelLoadUrl -> d
+    android.app.ProgressDialog spinnerDialog -> e
+    java.util.concurrent.ExecutorService threadPool -> m
+    int ACTIVITY_STARTING -> n
+    int ACTIVITY_RUNNING -> o
+    int ACTIVITY_EXITING -> p
+    int activityState -> q
+    org.apache.cordova.api.CordovaPlugin activityResultCallback -> f
+    boolean activityResultKeepRunning -> g
+    int backgroundColor -> r
+    int splashscreen -> h
+    int splashscreenTime -> i
+    int loadUrlTimeoutValue -> j
+    boolean keepRunning -> k
+    java.lang.String initCallbackClass -> s
+    android.app.Dialog splashDialog -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    android.app.Activity getActivity() -> a
+    void init() -> b
+    void init(org.apache.cordova.CordovaWebView,org.apache.cordova.CordovaWebViewClient,org.apache.cordova.CordovaChromeClient) -> a
+    void loadUrl(java.lang.String) -> a
+    void loadSpinner() -> c
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    boolean getBooleanProperty(java.lang.String,boolean) -> a
+    int getIntegerProperty(java.lang.String,int) -> a
+    java.lang.String getStringProperty(java.lang.String,java.lang.String) -> a
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onDestroy() -> onDestroy
+    void postMessage(java.lang.String,java.lang.Object) -> a
+    void spinnerStart(java.lang.String,java.lang.String) -> b
+    void spinnerStop() -> d
+    void endActivity() -> e
+    void startActivityForResult(org.apache.cordova.api.CordovaPlugin,android.content.Intent,int) -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onReceivedError(int,java.lang.String,java.lang.String) -> a
+    void displayError(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void removeSplashScreen() -> f
+    void showSplashScreen(int) -> a
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> b
+    java.util.concurrent.ExecutorService getThreadPool() -> g
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+org.apache.cordova.CordovaActivity$1 -> org.apache.cordova.k:
+    org.apache.cordova.CordovaActivity val$me -> a
+    org.apache.cordova.CordovaActivity this$0 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.CordovaActivity$2 -> org.apache.cordova.l:
+    org.apache.cordova.CordovaActivity val$me -> a
+    java.lang.String val$errorUrl -> b
+    org.apache.cordova.CordovaActivity this$0 -> c
+    void run() -> run
+org.apache.cordova.CordovaActivity$3 -> org.apache.cordova.m:
+    boolean val$exit -> a
+    org.apache.cordova.CordovaActivity val$me -> b
+    java.lang.String val$description -> c
+    java.lang.String val$failingUrl -> d
+    org.apache.cordova.CordovaActivity this$0 -> e
+    void run() -> run
+org.apache.cordova.CordovaActivity$4 -> org.apache.cordova.n:
+    org.apache.cordova.CordovaActivity val$me -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    java.lang.String val$button -> d
+    boolean val$exit -> e
+    org.apache.cordova.CordovaActivity this$0 -> f
+    void run() -> run
+org.apache.cordova.CordovaActivity$4$1 -> org.apache.cordova.o:
+    org.apache.cordova.CordovaActivity$4 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaActivity$5 -> org.apache.cordova.p:
+    org.apache.cordova.CordovaActivity val$that -> a
+    int val$time -> b
+    org.apache.cordova.CordovaActivity this$0 -> c
+    void run() -> run
+org.apache.cordova.CordovaActivity$5$1 -> org.apache.cordova.q:
+    org.apache.cordova.CordovaActivity$5 this$1 -> a
+    void run() -> run
+org.apache.cordova.CordovaArgs -> org.apache.cordova.CordovaArgs:
+    org.json.JSONArray baseArgs -> a
+    java.lang.String getString(int) -> a
+    boolean isNull(int) -> b
+    byte[] getArrayBuffer(int) -> c
+org.apache.cordova.CordovaChromeClient -> org.apache.cordova.CordovaChromeClient:
+    java.lang.String TAG -> b
+    long MAX_QUOTA -> c
+    org.apache.cordova.api.CordovaInterface cordova -> d
+    org.apache.cordova.CordovaWebView appView -> e
+    android.view.View mVideoProgressView -> f
+    android.webkit.ValueCallback mUploadMessage -> a
+    void setWebView(org.apache.cordova.CordovaWebView) -> a
+    boolean onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsAlert
+    boolean onJsConfirm(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsConfirm
+    boolean onJsPrompt(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> onJsPrompt
+    void onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage$QuotaUpdater) -> onExceededDatabaseQuota
+    void onConsoleMessage(java.lang.String,int,java.lang.String) -> onConsoleMessage
+    boolean onConsoleMessage(android.webkit.ConsoleMessage) -> onConsoleMessage
+    void onGeolocationPermissionsShowPrompt(java.lang.String,android.webkit.GeolocationPermissions$Callback) -> onGeolocationPermissionsShowPrompt
+    void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
+    void onHideCustomView() -> onHideCustomView
+    android.view.View getVideoLoadingProgressView() -> getVideoLoadingProgressView
+    android.webkit.ValueCallback getValueCallback() -> a
+org.apache.cordova.CordovaChromeClient$1 -> org.apache.cordova.r:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$2 -> org.apache.cordova.s:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.CordovaChromeClient$3 -> org.apache.cordova.t:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+org.apache.cordova.CordovaChromeClient$4 -> org.apache.cordova.u:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$5 -> org.apache.cordova.v:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$6 -> org.apache.cordova.w:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.CordovaChromeClient$7 -> org.apache.cordova.x:
+    android.webkit.JsResult val$result -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent) -> onKey
+org.apache.cordova.CordovaChromeClient$8 -> org.apache.cordova.y:
+    android.widget.EditText val$input -> a
+    android.webkit.JsPromptResult val$res -> b
+    org.apache.cordova.CordovaChromeClient this$0 -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaChromeClient$9 -> org.apache.cordova.z:
+    android.webkit.JsPromptResult val$res -> a
+    org.apache.cordova.CordovaChromeClient this$0 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.CordovaLocationListener -> org.apache.cordova.CordovaLocationListener:
+    int PERMISSION_DENIED -> a
+    int POSITION_UNAVAILABLE -> b
+    int TIMEOUT -> c
+    android.location.LocationManager locationManager -> d
+    org.apache.cordova.GeoBroker owner -> g
+    boolean running -> e
+    java.util.HashMap watches -> f
+    java.util.List callbacks -> h
+    java.util.Timer timer -> i
+    java.lang.String TAG -> j
+    void fail(int,java.lang.String) -> a
+    void win(android.location.Location) -> a
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    int size() -> a
+    void addWatch(java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    void addCallback(org.apache.cordova.api.CallbackContext,int) -> a
+    void clearWatch(java.lang.String) -> a
+    void destroy() -> b
+    void start() -> c
+    void stop() -> d
+    void cancelTimer() -> e
+    java.util.List access$000(org.apache.cordova.CordovaLocationListener) -> a
+    void access$100(org.apache.cordova.CordovaLocationListener) -> b
+org.apache.cordova.CordovaLocationListener$LocationTimeoutTask -> org.apache.cordova.aa:
+    org.apache.cordova.api.CallbackContext callbackContext -> b
+    org.apache.cordova.CordovaLocationListener listener -> c
+    org.apache.cordova.CordovaLocationListener this$0 -> a
+    void run() -> run
+org.apache.cordova.CordovaWebView -> org.apache.cordova.CordovaWebView:
+    java.util.ArrayList keyDownCodes -> g
+    java.util.ArrayList keyUpCodes -> h
+    org.apache.cordova.api.PluginManager pluginManager -> a
+    boolean paused -> i
+    android.content.BroadcastReceiver receiver -> j
+    org.apache.cordova.api.CordovaInterface cordova -> k
+    org.apache.cordova.CordovaWebViewClient viewClient -> b
+    org.apache.cordova.CordovaChromeClient chromeClient -> l
+    java.lang.String url -> m
+    int loadUrlTimeout -> c
+    boolean bound -> n
+    boolean handleButton -> o
+    long lastMenuEventTime -> p
+    org.apache.cordova.NativeToJsMessageQueue jsMessageQueue -> d
+    org.apache.cordova.ExposedJsApi exposedJsApi -> e
+    android.view.View mCustomView -> q
+    android.webkit.WebChromeClient$CustomViewCallback mCustomViewCallback -> r
+    org.apache.cordova.CordovaWebView$ActivityResult mResult -> s
+    android.widget.FrameLayout$LayoutParams COVER_SCREEN_GRAVITY_CENTER -> f
+    void initWebViewClient(org.apache.cordova.api.CordovaInterface) -> a
+    void setup() -> g
+    void updateUserAgentString() -> h
+    void exposeJsInterface() -> i
+    void setWebViewClient(org.apache.cordova.CordovaWebViewClient) -> setWebViewClient
+    void setWebChromeClient(org.apache.cordova.CordovaChromeClient) -> setWebChromeClient
+    org.apache.cordova.CordovaChromeClient getWebChromeClient() -> getWebChromeClient
+    void loadUrl(java.lang.String) -> loadUrl
+    void loadUrlIntoView(java.lang.String) -> a
+    void loadUrlNow(java.lang.String) -> b
+    void sendJavascript(java.lang.String) -> c
+    void sendPluginResult(org.apache.cordova.api.PluginResult,java.lang.String) -> a
+    void postMessage(java.lang.String,java.lang.Object) -> a
+    boolean backHistory() -> a
+    void showWebPage(java.lang.String,boolean,boolean,java.util.HashMap) -> a
+    void loadConfiguration() -> j
+    java.lang.String getProperty(java.lang.String,java.lang.String) -> a
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    void bindButton(boolean) -> a
+    void bindButton(java.lang.String,boolean) -> a
+    void handlePause(boolean) -> b
+    void handleResume(boolean,boolean) -> a
+    void handleDestroy() -> b
+    void onNewIntent(android.content.Intent) -> a
+    void printBackForwardList() -> c
+    boolean startOfHistory() -> d
+    void showCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback) -> a
+    void hideCustomView() -> e
+    boolean isCustomViewShowing() -> f
+    android.webkit.WebBackForwardList restoreState(android.os.Bundle) -> restoreState
+    void access$000(org.apache.cordova.CordovaWebView) -> a
+    org.apache.cordova.api.CordovaInterface access$100(org.apache.cordova.CordovaWebView) -> b
+org.apache.cordova.CordovaWebView$1 -> org.apache.cordova.ab:
+    org.apache.cordova.CordovaWebView this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.CordovaWebView$2 -> org.apache.cordova.ac:
+    org.apache.cordova.CordovaWebView val$me -> a
+    java.lang.String val$url -> b
+    org.apache.cordova.CordovaWebView this$0 -> c
+    void run() -> run
+org.apache.cordova.CordovaWebView$3 -> org.apache.cordova.ad:
+    int val$loadUrlTimeoutValue -> a
+    org.apache.cordova.CordovaWebView val$me -> b
+    int val$currentLoadUrlTimeout -> c
+    java.lang.Runnable val$loadError -> d
+    org.apache.cordova.CordovaWebView this$0 -> e
+    void run() -> run
+org.apache.cordova.CordovaWebView$4 -> org.apache.cordova.ae:
+    java.lang.Runnable val$timeoutCheck -> a
+    org.apache.cordova.CordovaWebView val$me -> b
+    java.lang.String val$url -> c
+    org.apache.cordova.CordovaWebView this$0 -> d
+    void run() -> run
+org.apache.cordova.CordovaWebView$ActivityResult -> org.apache.cordova.af:
+org.apache.cordova.CordovaWebView$Level16Apis -> org.apache.cordova.ag:
+    void enableUniversalAccess(android.webkit.WebSettings) -> a
+org.apache.cordova.CordovaWebViewClient -> org.apache.cordova.CordovaWebViewClient:
+    org.apache.cordova.api.CordovaInterface cordova -> a
+    org.apache.cordova.CordovaWebView appView -> b
+    boolean doClearHistory -> c
+    java.util.Hashtable authenticationTokens -> d
+    void setWebView(org.apache.cordova.CordovaWebView) -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,java.lang.String) -> shouldInterceptRequest
+    android.webkit.WebResourceResponse getWhitelistResponse() -> a
+    void onReceivedHttpAuthRequest(android.webkit.WebView,android.webkit.HttpAuthHandler,java.lang.String,java.lang.String) -> onReceivedHttpAuthRequest
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void onReceivedSslError(android.webkit.WebView,android.webkit.SslErrorHandler,android.net.http.SslError) -> onReceivedSslError
+    org.apache.cordova.AuthenticationToken getAuthenticationToken(java.lang.String,java.lang.String) -> a
+org.apache.cordova.CordovaWebViewClient$1 -> org.apache.cordova.ah:
+    org.apache.cordova.CordovaWebViewClient this$0 -> a
+    void run() -> run
+org.apache.cordova.CordovaWebViewClient$1$1 -> org.apache.cordova.ai:
+    org.apache.cordova.CordovaWebViewClient$1 this$1 -> a
+    void run() -> run
+org.apache.cordova.Device -> org.apache.cordova.Device:
+    java.lang.String cordovaVersion -> a
+    java.lang.String platform -> b
+    java.lang.String uuid -> c
+    android.content.BroadcastReceiver telephonyReceiver -> d
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void initTelephonyReceiver() -> f
+    java.lang.String getUuid() -> c
+    java.lang.String getModel() -> d
+    java.lang.String getOSVersion() -> e
+org.apache.cordova.Device$1 -> org.apache.cordova.aj:
+    org.apache.cordova.Device this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.DirectoryManager -> org.apache.cordova.DirectoryManager:
+    boolean testFileExists(java.lang.String) -> a
+    long getFreeDiskSpace(boolean) -> a
+    long freeSpaceCalculation(java.lang.String) -> b
+    boolean testSaveLocationExists() -> a
+    java.io.File constructFilePaths(java.lang.String,java.lang.String) -> a
+    java.lang.String getTempDirectoryPath(android.content.Context) -> a
+org.apache.cordova.DroidGap -> org.apache.cordova.DroidGap:
+org.apache.cordova.Echo -> org.apache.cordova.Echo:
+    boolean execute(java.lang.String,org.apache.cordova.CordovaArgs,org.apache.cordova.api.CallbackContext) -> a
+org.apache.cordova.Echo$1 -> org.apache.cordova.ak:
+    org.apache.cordova.api.CallbackContext val$callbackContext -> a
+    java.lang.String val$result -> b
+    org.apache.cordova.Echo this$0 -> c
+    void run() -> run
+org.apache.cordova.ExifHelper -> org.apache.cordova.ExifHelper:
+    java.lang.String aperture -> a
+    java.lang.String datetime -> b
+    java.lang.String exposureTime -> c
+    java.lang.String flash -> d
+    java.lang.String focalLength -> e
+    java.lang.String gpsAltitude -> f
+    java.lang.String gpsAltitudeRef -> g
+    java.lang.String gpsDateStamp -> h
+    java.lang.String gpsLatitude -> i
+    java.lang.String gpsLatitudeRef -> j
+    java.lang.String gpsLongitude -> k
+    java.lang.String gpsLongitudeRef -> l
+    java.lang.String gpsProcessingMethod -> m
+    java.lang.String gpsTimestamp -> n
+    java.lang.String iso -> o
+    java.lang.String make -> p
+    java.lang.String model -> q
+    java.lang.String orientation -> r
+    java.lang.String whiteBalance -> s
+    android.media.ExifInterface inFile -> t
+    android.media.ExifInterface outFile -> u
+    void createInFile(java.lang.String) -> a
+    void createOutFile(java.lang.String) -> b
+    void readExifData() -> a
+    void writeExifData() -> b
+    int getOrientation() -> c
+    void resetOrientation() -> d
+org.apache.cordova.ExposedJsApi -> org.apache.cordova.al:
+    org.apache.cordova.api.PluginManager pluginManager -> a
+    org.apache.cordova.NativeToJsMessageQueue jsMessageQueue -> b
+    java.lang.String exec(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    void setNativeToJsBridgeMode(int) -> a
+    java.lang.String retrieveJsMessages() -> a
+org.apache.cordova.FileHelper -> org.apache.cordova.FileHelper:
+    java.lang.String getRealPath(java.lang.String,org.apache.cordova.api.CordovaInterface) -> a
+    java.lang.String getRealPath(android.net.Uri,org.apache.cordova.api.CordovaInterface) -> a
+    java.io.InputStream getInputStreamFromUriString(java.lang.String,org.apache.cordova.api.CordovaInterface) -> b
+    java.lang.String stripFileProtocol(java.lang.String) -> a
+    java.lang.String getMimeType(java.lang.String,org.apache.cordova.api.CordovaInterface) -> c
+org.apache.cordova.FileProgressResult -> org.apache.cordova.FileProgressResult:
+    boolean lengthComputable -> a
+    long loaded -> b
+    long total -> c
+    void setLengthComputable(boolean) -> a
+    void setLoaded(long) -> a
+    void setTotal(long) -> b
+    org.json.JSONObject toJSONObject() -> a
+org.apache.cordova.FileTransfer -> org.apache.cordova.FileTransfer:
+    int FILE_NOT_FOUND_ERR -> a
+    int INVALID_URL_ERR -> b
+    int CONNECTION_ERR -> c
+    int ABORTED_ERR -> d
+    java.util.HashMap activeRequests -> e
+    com.squareup.okhttp.OkHttpClient httpClient -> f
+    javax.net.ssl.HostnameVerifier DO_NOT_VERIFY -> g
+    javax.net.ssl.TrustManager[] trustAllCerts -> h
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void addHeadersToRequest(java.net.URLConnection,org.json.JSONObject) -> b
+    void upload(java.lang.String,java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void safeClose(java.io.Closeable) -> b
+    org.apache.cordova.FileTransfer$TrackingInputStream getInputStream(java.net.URLConnection) -> b
+    javax.net.ssl.SSLSocketFactory trustAllHosts(javax.net.ssl.HttpsURLConnection) -> b
+    org.json.JSONObject createFileTransferError(int,java.lang.String,java.lang.String,java.net.URLConnection) -> b
+    org.json.JSONObject createFileTransferError(int,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer) -> a
+    java.lang.String getArgument(org.json.JSONArray,int,java.lang.String) -> a
+    void download(java.lang.String,java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> b
+    java.io.InputStream getPathFromUri(java.lang.String) -> a
+    java.io.File getFileFromPath(java.lang.String) -> b
+    void abort(java.lang.String) -> c
+    com.squareup.okhttp.OkHttpClient access$000() -> c
+    javax.net.ssl.SSLSocketFactory access$100(javax.net.ssl.HttpsURLConnection) -> a
+    javax.net.ssl.HostnameVerifier access$200() -> d
+    void access$300(java.net.URLConnection,org.json.JSONObject) -> a
+    java.io.InputStream access$400(org.apache.cordova.FileTransfer,java.lang.String) -> a
+    void access$500(java.io.Closeable) -> a
+    org.apache.cordova.FileTransfer$TrackingInputStream access$600(java.net.URLConnection) -> a
+    org.json.JSONObject access$700(int,java.lang.String,java.lang.String,java.net.URLConnection) -> a
+    java.util.HashMap access$800() -> e
+    java.io.File access$900(org.apache.cordova.FileTransfer,java.lang.String) -> b
+org.apache.cordova.FileTransfer$1 -> org.apache.cordova.am:
+    org.apache.cordova.FileTransfer$RequestContext val$context -> a
+    boolean val$useHttps -> b
+    boolean val$trustEveryone -> c
+    java.net.URL val$url -> d
+    java.lang.String val$httpMethod -> e
+    java.lang.String val$target -> f
+    org.json.JSONObject val$headers -> g
+    org.json.JSONObject val$params -> h
+    java.lang.String val$fileKey -> i
+    java.lang.String val$fileName -> j
+    java.lang.String val$mimeType -> k
+    java.lang.String val$source -> l
+    boolean val$chunkedMode -> m
+    java.lang.String val$objectId -> n
+    org.apache.cordova.FileTransfer this$0 -> o
+    void run() -> run
+org.apache.cordova.FileTransfer$2 -> org.apache.cordova.an:
+    boolean verify(java.lang.String,javax.net.ssl.SSLSession) -> verify
+org.apache.cordova.FileTransfer$3 -> org.apache.cordova.ao:
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+org.apache.cordova.FileTransfer$4 -> org.apache.cordova.ap:
+    org.apache.cordova.FileTransfer$RequestContext val$context -> a
+    java.lang.String val$target -> b
+    boolean val$useHttps -> c
+    boolean val$trustEveryone -> d
+    java.net.URL val$url -> e
+    java.lang.String val$source -> f
+    org.json.JSONObject val$headers -> g
+    java.lang.String val$objectId -> h
+    org.apache.cordova.FileTransfer this$0 -> i
+    void run() -> run
+org.apache.cordova.FileTransfer$5 -> org.apache.cordova.aq:
+    org.apache.cordova.FileTransfer$RequestContext val$context -> a
+    org.apache.cordova.FileTransfer this$0 -> b
+    void run() -> run
+org.apache.cordova.FileTransfer$ExposedGZIPInputStream -> org.apache.cordova.ar:
+    java.util.zip.Inflater getInflater() -> a
+org.apache.cordova.FileTransfer$RequestContext -> org.apache.cordova.as:
+    java.lang.String source -> a
+    java.lang.String target -> b
+    java.io.File targetFile -> c
+    org.apache.cordova.api.CallbackContext callbackContext -> d
+    java.io.InputStream currentInputStream -> e
+    java.io.OutputStream currentOutputStream -> f
+    boolean aborted -> g
+    void sendPluginResult(org.apache.cordova.api.PluginResult) -> a
+org.apache.cordova.FileTransfer$TrackingGZIPInputStream -> org.apache.cordova.at:
+    org.apache.cordova.FileTransfer$ExposedGZIPInputStream gzin -> a
+    long getTotalRawBytesRead() -> a
+org.apache.cordova.FileTransfer$TrackingHTTPInputStream -> org.apache.cordova.au:
+    long bytesRead -> a
+    int updateBytesRead(int) -> a
+    int read() -> read
+    int read(byte[]) -> read
+    int read(byte[],int,int) -> read
+    long getTotalRawBytesRead() -> a
+org.apache.cordova.FileTransfer$TrackingInputStream -> org.apache.cordova.av:
+    long getTotalRawBytesRead() -> a
+org.apache.cordova.FileUploadResult -> org.apache.cordova.FileUploadResult:
+    long bytesSent -> a
+    int responseCode -> b
+    java.lang.String response -> c
+    java.lang.String objectId -> d
+    void setBytesSent(long) -> a
+    void setResponseCode(int) -> a
+    void setResponse(java.lang.String) -> a
+    org.json.JSONObject toJSONObject() -> a
+org.apache.cordova.FileUtils -> org.apache.cordova.FileUtils:
+    int NOT_FOUND_ERR -> a
+    int SECURITY_ERR -> b
+    int ABORT_ERR -> c
+    int NOT_READABLE_ERR -> d
+    int ENCODING_ERR -> e
+    int NO_MODIFICATION_ALLOWED_ERR -> f
+    int INVALID_STATE_ERR -> g
+    int SYNTAX_ERR -> h
+    int INVALID_MODIFICATION_ERR -> i
+    int QUOTA_EXCEEDED_ERR -> j
+    int TYPE_MISMATCH_ERR -> k
+    int PATH_EXISTS_ERR -> l
+    int TEMPORARY -> m
+    int PERSISTENT -> n
+    int RESOURCE -> o
+    int APPLICATION -> p
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void notifyDelete(java.lang.String) -> a
+    org.json.JSONObject resolveLocalFileSystemURI(java.lang.String) -> b
+    org.json.JSONArray readEntries(java.lang.String) -> c
+    org.json.JSONObject transferTo(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    java.io.File createDestination(java.lang.String,java.io.File,java.io.File) -> a
+    org.json.JSONObject copyFile(java.io.File,java.io.File) -> a
+    void copyAction(java.io.File,java.io.File) -> b
+    org.json.JSONObject copyDirectory(java.io.File,java.io.File) -> c
+    boolean isCopyOnItself(java.lang.String,java.lang.String) -> a
+    org.json.JSONObject moveFile(java.io.File,java.io.File) -> d
+    org.json.JSONObject moveDirectory(java.io.File,java.io.File) -> e
+    boolean removeRecursively(java.lang.String) -> d
+    boolean removeDirRecursively(java.io.File) -> b
+    boolean remove(java.lang.String) -> g
+    org.json.JSONObject getFile(java.lang.String,java.lang.String,org.json.JSONObject,boolean) -> a
+    java.io.File createFileObject(java.lang.String,java.lang.String) -> b
+    org.json.JSONObject getParent(java.lang.String) -> h
+    boolean atRootDirectory(java.lang.String) -> i
+    java.io.File createFileObject(java.lang.String) -> j
+    long getMetadata(java.lang.String) -> k
+    org.json.JSONObject getFileMetadata(java.lang.String) -> l
+    org.json.JSONObject requestFileSystem(int) -> a
+    org.json.JSONObject getEntry(java.io.File) -> a
+    org.json.JSONObject getEntry(java.lang.String) -> m
+    void readFileAs(java.lang.String,int,int,org.apache.cordova.api.CallbackContext,java.lang.String,int) -> a
+    byte[] readAsBinaryHelper(java.lang.String,int,int) -> a
+    long write(java.lang.String,java.lang.String,int) -> a
+    long truncateFile(java.lang.String,long) -> a
+    byte[] access$000(org.apache.cordova.FileUtils,java.lang.String,int,int) -> a
+org.apache.cordova.FileUtils$1 -> org.apache.cordova.aw:
+    java.lang.String val$filename -> a
+    int val$start -> b
+    int val$end -> c
+    int val$resultType -> d
+    java.lang.String val$encoding -> e
+    org.apache.cordova.api.CallbackContext val$callbackContext -> f
+    org.apache.cordova.FileUtils this$0 -> g
+    void run() -> run
+org.apache.cordova.GPSListener -> org.apache.cordova.GPSListener:
+    void start() -> c
+org.apache.cordova.GeoBroker -> org.apache.cordova.GeoBroker:
+    org.apache.cordova.GPSListener gpsListener -> a
+    org.apache.cordova.NetworkListener networkListener -> b
+    android.location.LocationManager locationManager -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void clearWatch(java.lang.String) -> a
+    void getCurrentLocation(org.apache.cordova.api.CallbackContext,boolean,int) -> a
+    void addWatch(java.lang.String,org.apache.cordova.api.CallbackContext,boolean) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    org.json.JSONObject returnLocationJSON(android.location.Location) -> a
+    void win(android.location.Location,org.apache.cordova.api.CallbackContext,boolean) -> a
+    void fail(int,java.lang.String,org.apache.cordova.api.CallbackContext,boolean) -> a
+    boolean isGlobalListener(org.apache.cordova.CordovaLocationListener) -> a
+org.apache.cordova.Globalization -> org.apache.cordova.Globalization:
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    org.json.JSONObject getLocaleName() -> c
+    org.json.JSONObject getPreferredLanguage() -> d
+    org.json.JSONObject getDateToString(org.json.JSONArray) -> a
+    org.json.JSONObject getStringtoDate(org.json.JSONArray) -> b
+    org.json.JSONObject getDatePattern(org.json.JSONArray) -> c
+    org.json.JSONObject getDateNames(org.json.JSONArray) -> d
+    org.json.JSONObject getIsDayLightSavingsTime(org.json.JSONArray) -> e
+    org.json.JSONObject getFirstDayOfWeek(org.json.JSONArray) -> f
+    org.json.JSONObject getNumberToString(org.json.JSONArray) -> g
+    org.json.JSONObject getStringToNumber(org.json.JSONArray) -> h
+    org.json.JSONObject getNumberPattern(org.json.JSONArray) -> i
+    org.json.JSONObject getCurrencyPattern(org.json.JSONArray) -> j
+    java.text.DecimalFormat getNumberFormatInstance(org.json.JSONArray) -> k
+org.apache.cordova.Globalization$1 -> org.apache.cordova.ax:
+    java.util.Map val$namesMap -> a
+    org.apache.cordova.Globalization this$0 -> b
+    int compare(java.lang.String,java.lang.String) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+org.apache.cordova.GlobalizationError -> org.apache.cordova.GlobalizationError:
+    int error -> a
+    java.lang.String getErrorString() -> a
+    int getErrorCode() -> b
+    org.json.JSONObject toJson() -> c
+org.apache.cordova.HttpHandler -> org.apache.cordova.HttpHandler:
+org.apache.cordova.IceCreamCordovaWebViewClient -> org.apache.cordova.IceCreamCordovaWebViewClient:
+    android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,java.lang.String) -> shouldInterceptRequest
+    android.webkit.WebResourceResponse generateWebResourceResponse(java.lang.String) -> a
+    boolean needsIceCreamSpaceInAssetUrlFix(java.lang.String) -> b
+org.apache.cordova.InAppBrowser -> org.apache.cordova.InAppBrowser:
+    long MAX_QUOTA -> a
+    android.app.Dialog dialog -> b
+    android.webkit.WebView inAppWebView -> c
+    android.widget.EditText edittext -> d
+    boolean showLocationBar -> e
+    org.apache.cordova.api.CallbackContext callbackContext -> f
+    java.lang.String buttonLabel -> g
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void injectDeferredObject(java.lang.String,java.lang.String) -> a
+    java.util.HashMap parseFeature(java.lang.String) -> b
+    java.lang.String updateUrl(java.lang.String) -> c
+    java.lang.String openExternal(java.lang.String) -> a
+    void closeDialog() -> c
+    void goBack() -> d
+    void goForward() -> e
+    void navigate(java.lang.String) -> d
+    boolean getShowLocationBar() -> f
+    java.lang.String showWebPage(java.lang.String,java.util.HashMap) -> a
+    void sendUpdate(org.json.JSONObject,boolean) -> a
+    void sendUpdate(org.json.JSONObject,boolean,org.apache.cordova.api.PluginResult$Status) -> a
+    android.app.Dialog access$002(org.apache.cordova.InAppBrowser,android.app.Dialog) -> a
+    android.app.Dialog access$000(org.apache.cordova.InAppBrowser) -> a
+    void access$100(org.apache.cordova.InAppBrowser,org.json.JSONObject,boolean) -> a
+    void access$200(org.apache.cordova.InAppBrowser) -> b
+    void access$300(org.apache.cordova.InAppBrowser) -> c
+    android.widget.EditText access$402(org.apache.cordova.InAppBrowser,android.widget.EditText) -> a
+    android.widget.EditText access$400(org.apache.cordova.InAppBrowser) -> d
+    void access$500(org.apache.cordova.InAppBrowser,java.lang.String) -> a
+    java.lang.String access$600(org.apache.cordova.InAppBrowser) -> e
+    void access$700(org.apache.cordova.InAppBrowser) -> f
+    android.webkit.WebView access$802(org.apache.cordova.InAppBrowser,android.webkit.WebView) -> a
+    android.webkit.WebView access$800(org.apache.cordova.InAppBrowser) -> g
+    boolean access$900(org.apache.cordova.InAppBrowser) -> h
+    long access$1000(org.apache.cordova.InAppBrowser) -> i
+    void access$1100(org.apache.cordova.InAppBrowser,org.json.JSONObject,boolean,org.apache.cordova.api.PluginResult$Status) -> a
+org.apache.cordova.InAppBrowser$1 -> org.apache.cordova.ay:
+    java.lang.String val$url -> a
+    org.apache.cordova.CordovaWebView val$thatWebView -> b
+    org.apache.cordova.InAppBrowser this$0 -> c
+    int dpToPixels(int) -> a
+    void run() -> run
+org.apache.cordova.InAppBrowser$1$1 -> org.apache.cordova.az:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+org.apache.cordova.InAppBrowser$1$2 -> org.apache.cordova.ba:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+org.apache.cordova.InAppBrowser$1$3 -> org.apache.cordova.bb:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+org.apache.cordova.InAppBrowser$1$4 -> org.apache.cordova.bc:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    boolean onKey(android.view.View,int,android.view.KeyEvent) -> onKey
+org.apache.cordova.InAppBrowser$1$5 -> org.apache.cordova.bd:
+    org.apache.cordova.InAppBrowser$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+org.apache.cordova.InAppBrowser$InAppBrowserClient -> org.apache.cordova.InAppBrowser$InAppBrowserClient:
+    android.widget.EditText edittext -> a
+    org.apache.cordova.CordovaWebView webView -> b
+    org.apache.cordova.InAppBrowser this$0 -> c
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+org.apache.cordova.InAppBrowser$InAppChromeClient -> org.apache.cordova.InAppBrowser$InAppChromeClient:
+    org.apache.cordova.CordovaWebView webView -> b
+    org.apache.cordova.InAppBrowser this$0 -> a
+    void onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage$QuotaUpdater) -> onExceededDatabaseQuota
+    void onGeolocationPermissionsShowPrompt(java.lang.String,android.webkit.GeolocationPermissions$Callback) -> onGeolocationPermissionsShowPrompt
+    boolean onJsPrompt(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> onJsPrompt
+org.apache.cordova.JSONUtils -> org.apache.cordova.JSONUtils:
+org.apache.cordova.LinearLayoutSoftKeyboardDetect -> org.apache.cordova.LinearLayoutSoftKeyboardDetect:
+    int oldHeight -> a
+    int oldWidth -> b
+    int screenWidth -> c
+    int screenHeight -> d
+    org.apache.cordova.CordovaActivity app -> e
+    void onMeasure(int,int) -> onMeasure
+org.apache.cordova.NativeToJsMessageQueue -> org.apache.cordova.NativeToJsMessageQueue:
+    int MAX_PAYLOAD_SIZE -> a
+    int activeListenerIndex -> b
+    boolean paused -> c
+    java.util.LinkedList queue -> d
+    org.apache.cordova.NativeToJsMessageQueue$BridgeMode[] registeredListeners -> e
+    org.apache.cordova.api.CordovaInterface cordova -> f
+    org.apache.cordova.CordovaWebView webView -> g
+    void setBridgeMode(int) -> a
+    void reset() -> a
+    int calculatePackedMessageLength(org.apache.cordova.NativeToJsMessageQueue$JsMessage) -> a
+    void packMessage(org.apache.cordova.NativeToJsMessageQueue$JsMessage,java.lang.StringBuilder) -> a
+    java.lang.String popAndEncode() -> b
+    java.lang.String popAndEncodeAsJs() -> c
+    void addJavaScript(java.lang.String) -> a
+    void addPluginResult(org.apache.cordova.api.PluginResult,java.lang.String) -> a
+    void enqueueMessage(org.apache.cordova.NativeToJsMessageQueue$JsMessage) -> b
+    void setPaused(boolean) -> a
+    java.lang.String access$200(org.apache.cordova.NativeToJsMessageQueue) -> a
+    org.apache.cordova.CordovaWebView access$300(org.apache.cordova.NativeToJsMessageQueue) -> b
+    org.apache.cordova.api.CordovaInterface access$400(org.apache.cordova.NativeToJsMessageQueue) -> c
+    java.util.LinkedList access$500(org.apache.cordova.NativeToJsMessageQueue) -> d
+org.apache.cordova.NativeToJsMessageQueue$1 -> org.apache.cordova.be:
+org.apache.cordova.NativeToJsMessageQueue$BridgeMode -> org.apache.cordova.bf:
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NativeToJsMessageQueue$JsMessage -> org.apache.cordova.bg:
+    java.lang.String jsPayloadOrCallbackId -> a
+    org.apache.cordova.api.PluginResult pluginResult -> b
+    int calculateEncodedLength() -> a
+    void encodeAsMessage(java.lang.StringBuilder) -> a
+    void encodeAsJsMessage(java.lang.StringBuilder) -> b
+org.apache.cordova.NativeToJsMessageQueue$LoadUrlBridgeMode -> org.apache.cordova.bh:
+    java.lang.Runnable runnable -> a
+    org.apache.cordova.NativeToJsMessageQueue this$0 -> b
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NativeToJsMessageQueue$LoadUrlBridgeMode$1 -> org.apache.cordova.bi:
+    org.apache.cordova.NativeToJsMessageQueue$LoadUrlBridgeMode this$1 -> a
+    void run() -> run
+org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode -> org.apache.cordova.bj:
+    boolean online -> a
+    java.lang.Runnable runnable -> b
+    org.apache.cordova.NativeToJsMessageQueue this$0 -> c
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode$1 -> org.apache.cordova.bk:
+    org.apache.cordova.NativeToJsMessageQueue$OnlineEventsBridgeMode this$1 -> a
+    void run() -> run
+org.apache.cordova.NativeToJsMessageQueue$PrivateApiBridgeMode -> org.apache.cordova.bl:
+    java.lang.reflect.Method sendMessageMethod -> a
+    java.lang.Object webViewCore -> b
+    boolean initFailed -> c
+    org.apache.cordova.NativeToJsMessageQueue this$0 -> d
+    void initReflection() -> b
+    void onNativeToJsMessageAvailable() -> a
+org.apache.cordova.NetworkListener -> org.apache.cordova.NetworkListener:
+org.apache.cordova.NetworkManager -> org.apache.cordova.NetworkManager:
+    int NOT_REACHABLE -> a
+    int REACHABLE_VIA_CARRIER_DATA_NETWORK -> b
+    int REACHABLE_VIA_WIFI_NETWORK -> c
+    org.apache.cordova.api.CallbackContext connectionCallbackContext -> f
+    boolean registered -> g
+    android.net.ConnectivityManager sockMan -> d
+    android.content.BroadcastReceiver receiver -> e
+    java.lang.String lastStatus -> h
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void updateConnectionInfo(android.net.NetworkInfo) -> a
+    java.lang.String getConnectionInfo(android.net.NetworkInfo) -> b
+    void sendUpdate(java.lang.String) -> a
+    java.lang.String getType(android.net.NetworkInfo) -> c
+    void access$000(org.apache.cordova.NetworkManager,android.net.NetworkInfo) -> a
+org.apache.cordova.NetworkManager$1 -> org.apache.cordova.bm:
+    org.apache.cordova.NetworkManager this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+org.apache.cordova.Notification -> org.apache.cordova.Notification:
+    int confirmResult -> a
+    android.app.ProgressDialog spinnerDialog -> b
+    android.app.ProgressDialog progressDialog -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void beep(long) -> a
+    void vibrate(long) -> b
+    void alert(java.lang.String,java.lang.String,java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    void confirm(java.lang.String,java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void prompt(java.lang.String,java.lang.String,org.json.JSONArray,java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    void activityStart(java.lang.String,java.lang.String) -> a
+    void activityStop() -> c
+    void progressStart(java.lang.String,java.lang.String) -> b
+    void progressValue(int) -> a
+    void progressStop() -> d
+org.apache.cordova.Notification$1 -> org.apache.cordova.bn:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    java.lang.String val$buttonLabel -> d
+    org.apache.cordova.api.CallbackContext val$callbackContext -> e
+    org.apache.cordova.Notification this$0 -> f
+    void run() -> run
+org.apache.cordova.Notification$1$1 -> org.apache.cordova.bo:
+    org.apache.cordova.Notification$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$1$2 -> org.apache.cordova.bp:
+    org.apache.cordova.Notification$1 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$2 -> org.apache.cordova.bq:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    org.json.JSONArray val$buttonLabels -> d
+    org.apache.cordova.api.CallbackContext val$callbackContext -> e
+    org.apache.cordova.Notification this$0 -> f
+    void run() -> run
+org.apache.cordova.Notification$2$1 -> org.apache.cordova.br:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$2$2 -> org.apache.cordova.bs:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$2$3 -> org.apache.cordova.bt:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$2$4 -> org.apache.cordova.bu:
+    org.apache.cordova.Notification$2 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$3 -> org.apache.cordova.bv:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$message -> b
+    java.lang.String val$title -> c
+    android.widget.EditText val$promptInput -> d
+    org.json.JSONArray val$buttonLabels -> e
+    java.lang.String val$defaultText -> f
+    org.apache.cordova.api.CallbackContext val$callbackContext -> g
+    org.apache.cordova.Notification this$0 -> h
+    void run() -> run
+org.apache.cordova.Notification$3$1 -> org.apache.cordova.bw:
+    org.json.JSONObject val$result -> a
+    org.apache.cordova.Notification$3 this$1 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$3$2 -> org.apache.cordova.bx:
+    org.json.JSONObject val$result -> a
+    org.apache.cordova.Notification$3 this$1 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$3$3 -> org.apache.cordova.by:
+    org.json.JSONObject val$result -> a
+    org.apache.cordova.Notification$3 this$1 -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+org.apache.cordova.Notification$3$4 -> org.apache.cordova.bz:
+    org.json.JSONObject val$result -> a
+    org.apache.cordova.Notification$3 this$1 -> b
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$4 -> org.apache.cordova.ca:
+    org.apache.cordova.api.CordovaInterface val$cordova -> a
+    java.lang.String val$title -> b
+    java.lang.String val$message -> c
+    org.apache.cordova.Notification this$0 -> d
+    void run() -> run
+org.apache.cordova.Notification$4$1 -> org.apache.cordova.cb:
+    org.apache.cordova.Notification$4 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.Notification$5 -> org.apache.cordova.cc:
+    org.apache.cordova.Notification val$notification -> a
+    org.apache.cordova.api.CordovaInterface val$cordova -> b
+    java.lang.String val$title -> c
+    java.lang.String val$message -> d
+    org.apache.cordova.Notification this$0 -> e
+    void run() -> run
+org.apache.cordova.Notification$5$1 -> org.apache.cordova.cd:
+    org.apache.cordova.Notification$5 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+org.apache.cordova.SplashScreen -> org.apache.cordova.SplashScreen:
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+org.apache.cordova.Storage -> org.apache.cordova.Storage:
+    android.database.sqlite.SQLiteDatabase myDb -> a
+    java.lang.String path -> b
+    java.lang.String dbName -> c
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void onDestroy() -> a
+    void onReset() -> b
+    void openDatabase(java.lang.String,java.lang.String,java.lang.String,long) -> a
+    void executeSql(java.lang.String,java.lang.String[],java.lang.String) -> a
+    boolean isDDL(java.lang.String) -> a
+    void processResults(android.database.Cursor,java.lang.String) -> a
+org.apache.cordova.api.CallbackContext -> org.apache.cordova.api.CallbackContext:
+    java.lang.String callbackId -> a
+    org.apache.cordova.CordovaWebView webView -> b
+    boolean finished -> c
+    boolean isFinished() -> a
+    java.lang.String getCallbackId() -> b
+    void sendPluginResult(org.apache.cordova.api.PluginResult) -> a
+    void success(org.json.JSONObject) -> a
+    void success(java.lang.String) -> a
+    void success(org.json.JSONArray) -> a
+    void success(byte[]) -> a
+    void success() -> c
+    void error(org.json.JSONObject) -> b
+    void error(java.lang.String) -> b
+    void error(int) -> a
+org.apache.cordova.api.CordovaInterface -> org.apache.cordova.api.CordovaInterface:
+    void startActivityForResult(org.apache.cordova.api.CordovaPlugin,android.content.Intent,int) -> a
+    android.app.Activity getActivity() -> a
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> b
+    java.util.concurrent.ExecutorService getThreadPool() -> g
+org.apache.cordova.api.CordovaPlugin -> org.apache.cordova.api.CordovaPlugin:
+    org.apache.cordova.CordovaWebView webView -> q
+    org.apache.cordova.api.CordovaInterface cordova -> r
+    boolean $assertionsDisabled -> s
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,java.lang.String,org.apache.cordova.api.CallbackContext) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    boolean execute(java.lang.String,org.apache.cordova.CordovaArgs,org.apache.cordova.api.CallbackContext) -> a
+    void onPause(boolean) -> b
+    void onResume(boolean) -> c
+    void onNewIntent(android.content.Intent) -> a
+    void onDestroy() -> a
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    boolean onOverrideUrlLoading(java.lang.String) -> e
+    android.webkit.WebResourceResponse shouldInterceptRequest(java.lang.String) -> f
+    void onReset() -> b
+org.apache.cordova.api.LOG -> org.apache.cordova.api.LOG:
+    int LOGLEVEL -> a
+    void setLogLevel(java.lang.String) -> a
+    boolean isLoggable(int) -> a
+    void v(java.lang.String,java.lang.String) -> a
+    void d(java.lang.String,java.lang.String) -> b
+    void i(java.lang.String,java.lang.String) -> c
+    void w(java.lang.String,java.lang.String) -> d
+    void e(java.lang.String,java.lang.String) -> e
+    void e(java.lang.String,java.lang.String,java.lang.Throwable) -> a
+    void v(java.lang.String,java.lang.String,java.lang.Object[]) -> a
+    void d(java.lang.String,java.lang.String,java.lang.Object[]) -> b
+    void i(java.lang.String,java.lang.String,java.lang.Object[]) -> c
+    void e(java.lang.String,java.lang.String,java.lang.Object[]) -> d
+org.apache.cordova.api.LegacyContext -> org.apache.cordova.api.LegacyContext:
+    org.apache.cordova.api.CordovaInterface cordova -> a
+    android.app.Activity getActivity() -> a
+    java.lang.Object onMessage(java.lang.String,java.lang.Object) -> b
+    void startActivityForResult(org.apache.cordova.api.CordovaPlugin,android.content.Intent,int) -> a
+    java.util.concurrent.ExecutorService getThreadPool() -> g
+org.apache.cordova.api.Plugin -> org.apache.cordova.api.Plugin:
+    org.apache.cordova.api.LegacyContext ctx -> a
+    org.apache.cordova.api.PluginResult execute(java.lang.String,org.json.JSONArray,java.lang.String) -> a
+    boolean isSynch(java.lang.String) -> a
+    void initialize(org.apache.cordova.api.CordovaInterface,org.apache.cordova.CordovaWebView) -> a
+    void setContext(org.apache.cordova.api.CordovaInterface) -> a
+    void setView(org.apache.cordova.CordovaWebView) -> a
+    boolean execute(java.lang.String,org.json.JSONArray,org.apache.cordova.api.CallbackContext) -> a
+    void sendPluginResult(org.apache.cordova.api.PluginResult,java.lang.String) -> a
+org.apache.cordova.api.Plugin$1 -> org.apache.cordova.api.a:
+    java.lang.String val$action -> a
+    org.json.JSONArray val$args -> b
+    java.lang.String val$callbackId -> c
+    org.apache.cordova.api.Plugin this$0 -> d
+    void run() -> run
+org.apache.cordova.api.PluginEntry -> org.apache.cordova.api.PluginEntry:
+    java.lang.String service -> a
+    java.lang.String pluginClass -> b
+    org.apache.cordova.api.CordovaPlugin plugin -> c
+    boolean onload -> d
+    org.apache.cordova.api.CordovaPlugin createPlugin(org.apache.cordova.CordovaWebView,org.apache.cordova.api.CordovaInterface) -> a
+    java.lang.Class getClassByName(java.lang.String) -> a
+    boolean isCordovaPlugin(java.lang.Class) -> a
+org.apache.cordova.api.PluginManager -> org.apache.cordova.api.PluginManager:
+    java.lang.String TAG -> b
+    java.util.HashMap entries -> c
+    org.apache.cordova.api.CordovaInterface ctx -> d
+    org.apache.cordova.CordovaWebView app -> e
+    boolean firstRun -> f
+    java.util.HashMap urlMap -> a
+    void init() -> a
+    void loadPlugins() -> b
+    void clearPluginObjects() -> c
+    void startupPlugins() -> d
+    boolean exec(java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    org.apache.cordova.api.CordovaPlugin getPlugin(java.lang.String) -> a
+    void addService(org.apache.cordova.api.PluginEntry) -> a
+    void onPause(boolean) -> a
+    void onResume(boolean) -> b
+    void onDestroy() -> e
+    java.lang.Object postMessage(java.lang.String,java.lang.Object) -> a
+    void onNewIntent(android.content.Intent) -> a
+    boolean onOverrideUrlLoading(java.lang.String) -> b
+    android.webkit.WebResourceResponse shouldInterceptRequest(java.lang.String) -> c
+    void onReset() -> f
+    void pluginConfigurationMissing() -> g
+org.apache.cordova.api.PluginResult -> org.apache.cordova.api.PluginResult:
+    int status -> b
+    int messageType -> c
+    boolean keepCallback -> d
+    java.lang.String strMessage -> e
+    java.lang.String encodedMessage -> f
+    java.lang.String[] StatusMessages -> a
+    void setKeepCallback(boolean) -> a
+    int getStatus() -> a
+    int getMessageType() -> b
+    java.lang.String getMessage() -> c
+    java.lang.String getStrMessage() -> d
+    boolean getKeepCallback() -> e
+org.apache.cordova.api.PluginResult$Status -> org.apache.cordova.api.PluginResult$Status:
+    org.apache.cordova.api.PluginResult$Status NO_RESULT -> a
+    org.apache.cordova.api.PluginResult$Status OK -> b
+    org.apache.cordova.api.PluginResult$Status CLASS_NOT_FOUND_EXCEPTION -> c
+    org.apache.cordova.api.PluginResult$Status ILLEGAL_ACCESS_EXCEPTION -> d
+    org.apache.cordova.api.PluginResult$Status INSTANTIATION_EXCEPTION -> e
+    org.apache.cordova.api.PluginResult$Status MALFORMED_URL_EXCEPTION -> f
+    org.apache.cordova.api.PluginResult$Status IO_EXCEPTION -> g
+    org.apache.cordova.api.PluginResult$Status INVALID_ACTION -> h
+    org.apache.cordova.api.PluginResult$Status JSON_EXCEPTION -> i
+    org.apache.cordova.api.PluginResult$Status ERROR -> j
+    org.apache.cordova.api.PluginResult$Status[] $VALUES -> k
+    org.apache.cordova.api.PluginResult$Status[] values() -> values
+    org.apache.cordova.api.PluginResult$Status valueOf(java.lang.String) -> valueOf
+org.apache.cordova.file.EncodingException -> org.apache.cordova.file.EncodingException:
+org.apache.cordova.file.FileExistsException -> org.apache.cordova.file.FileExistsException:
+org.apache.cordova.file.InvalidModificationException -> org.apache.cordova.file.InvalidModificationException:
+org.apache.cordova.file.NoModificationAllowedException -> org.apache.cordova.file.NoModificationAllowedException:
+org.apache.cordova.file.TypeMismatchException -> org.apache.cordova.file.TypeMismatchException:

@@ -1,0 +1,174 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: int getClientWidth()
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.DrawerLayout: void setScrimColor(int)
+android.support.v4.widget.DrawerLayout: void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener)
+android.support.v4.widget.DrawerLayout: void setDrawerLockMode(int)
+android.support.v4.widget.DrawerLayout$SavedState
+android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SlidingPaneLayout: void setParallaxDistance(int)
+android.support.v4.widget.SlidingPaneLayout: int getParallaxDistance()
+android.support.v4.widget.SlidingPaneLayout: void setSliderFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getSliderFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setCoveredFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getCoveredFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
+android.support.v4.widget.SlidingPaneLayout$SavedState
+android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+com.squareup.okhttp.ResponseSource: com.squareup.okhttp.ResponseSource[] values()
+com.squareup.okhttp.ResponseSource: com.squareup.okhttp.ResponseSource valueOf(java.lang.String)
+com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry: com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry[] values()
+com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry: com.squareup.okhttp.internal.http.HttpURLConnectionImpl$Retry valueOf(java.lang.String)
+com.varutra.owasp.kalp.OwaspLoadingActivity
+com.varutra.owasp.kalp.OwaspLoadingActivity: OwaspLoadingActivity()
+com.varutra.owasp.kalp.R$dimen: int activity_horizontal_margin
+com.varutra.owasp.kalp.R$dimen: int activity_vertical_margin
+com.varutra.owasp.kalp.R$drawable: int ic_launcher
+com.varutra.owasp.kalp.R$drawable: int owasp_logo_transparant_512_2
+com.varutra.owasp.kalp.R$drawable: int transparent_app_logo_tab
+com.varutra.owasp.kalp.R$id: int ImgandTitleLayout
+com.varutra.owasp.kalp.R$id: int action_settings
+com.varutra.owasp.kalp.R$id: int copy_rights
+com.varutra.owasp.kalp.R$id: int copy_rightss
+com.varutra.owasp.kalp.R$id: int loadingBar
+com.varutra.owasp.kalp.R$id: int loadingLayout
+com.varutra.owasp.kalp.R$id: int mvd_logo2
+com.varutra.owasp.kalp.R$id: int splashScreenRL
+com.varutra.owasp.kalp.R$id: int tutorialView
+com.varutra.owasp.kalp.R$id: int webview
+com.varutra.owasp.kalp.R$layout: int activity_main
+com.varutra.owasp.kalp.R$layout: int webview
+com.varutra.owasp.kalp.R$layout: int welcome_screen
+com.varutra.owasp.kalp.R$menu: int main
+com.varutra.owasp.kalp.R$string: int action_settings
+com.varutra.owasp.kalp.R$string: int app_name
+com.varutra.owasp.kalp.R$string: int hello_world
+com.varutra.owasp.kalp.R$style: int AppBaseTheme
+com.varutra.owasp.kalp.R$style: int AppTheme
+com.varutra.owasp.kalp.R$xml: int config
+org.apache.cordova.AccelListener
+org.apache.cordova.App
+org.apache.cordova.AudioHandler
+org.apache.cordova.AudioPlayer
+org.apache.cordova.AudioPlayer$MODE
+org.apache.cordova.AudioPlayer$MODE: org.apache.cordova.AudioPlayer$MODE[] values()
+org.apache.cordova.AudioPlayer$MODE: org.apache.cordova.AudioPlayer$MODE valueOf(java.lang.String)
+org.apache.cordova.AudioPlayer$STATE
+org.apache.cordova.AudioPlayer$STATE: org.apache.cordova.AudioPlayer$STATE[] values()
+org.apache.cordova.AudioPlayer$STATE: org.apache.cordova.AudioPlayer$STATE valueOf(java.lang.String)
+org.apache.cordova.AuthenticationToken
+org.apache.cordova.BatteryListener
+org.apache.cordova.BuildConfig
+org.apache.cordova.CameraLauncher
+org.apache.cordova.Capture
+org.apache.cordova.CompassListener
+org.apache.cordova.Config
+org.apache.cordova.ContactAccessor
+org.apache.cordova.ContactAccessorSdk5
+org.apache.cordova.ContactManager
+org.apache.cordova.CordovaActivity
+org.apache.cordova.CordovaActivity: CordovaActivity()
+org.apache.cordova.CordovaArgs
+org.apache.cordova.CordovaChromeClient
+org.apache.cordova.CordovaLocationListener
+org.apache.cordova.CordovaWebView
+org.apache.cordova.CordovaWebView: CordovaWebView(android.content.Context)
+org.apache.cordova.CordovaWebView: CordovaWebView(android.content.Context,android.util.AttributeSet)
+org.apache.cordova.CordovaWebView: CordovaWebView(android.content.Context,android.util.AttributeSet,int)
+org.apache.cordova.CordovaWebView: CordovaWebView(android.content.Context,android.util.AttributeSet,int,boolean)
+org.apache.cordova.CordovaWebView: void setWebViewClient(org.apache.cordova.CordovaWebViewClient)
+org.apache.cordova.CordovaWebView: void setWebChromeClient(org.apache.cordova.CordovaChromeClient)
+org.apache.cordova.CordovaWebView: org.apache.cordova.CordovaChromeClient getWebChromeClient()
+org.apache.cordova.CordovaWebViewClient
+org.apache.cordova.Device
+org.apache.cordova.DirectoryManager
+org.apache.cordova.DroidGap
+org.apache.cordova.DroidGap: DroidGap()
+org.apache.cordova.Echo
+org.apache.cordova.ExifHelper
+org.apache.cordova.FileHelper
+org.apache.cordova.FileProgressResult
+org.apache.cordova.FileTransfer
+org.apache.cordova.FileUploadResult
+org.apache.cordova.FileUtils
+org.apache.cordova.GPSListener
+org.apache.cordova.GeoBroker
+org.apache.cordova.Globalization
+org.apache.cordova.GlobalizationError
+org.apache.cordova.HttpHandler
+org.apache.cordova.IceCreamCordovaWebViewClient
+org.apache.cordova.InAppBrowser
+org.apache.cordova.InAppBrowser$InAppBrowserClient
+org.apache.cordova.InAppBrowser$InAppChromeClient
+org.apache.cordova.JSONUtils
+org.apache.cordova.LinearLayoutSoftKeyboardDetect
+org.apache.cordova.NativeToJsMessageQueue
+org.apache.cordova.NetworkListener
+org.apache.cordova.NetworkManager
+org.apache.cordova.Notification
+org.apache.cordova.SplashScreen
+org.apache.cordova.Storage
+org.apache.cordova.api.CallbackContext
+org.apache.cordova.api.CordovaInterface
+org.apache.cordova.api.CordovaPlugin
+org.apache.cordova.api.LOG
+org.apache.cordova.api.LegacyContext
+org.apache.cordova.api.Plugin
+org.apache.cordova.api.PluginEntry
+org.apache.cordova.api.PluginManager
+org.apache.cordova.api.PluginResult
+org.apache.cordova.api.PluginResult$Status
+org.apache.cordova.api.PluginResult$Status: org.apache.cordova.api.PluginResult$Status[] values()
+org.apache.cordova.api.PluginResult$Status: org.apache.cordova.api.PluginResult$Status valueOf(java.lang.String)
+org.apache.cordova.file.EncodingException
+org.apache.cordova.file.FileExistsException
+org.apache.cordova.file.InvalidModificationException
+org.apache.cordova.file.NoModificationAllowedException
+org.apache.cordova.file.TypeMismatchException

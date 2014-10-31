@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:58
+-keep class com.varutra.owasp.kalp.CoreDovaWebProject { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.varutra.owasp.kalp.OwaspLoadingActivity { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:16
+-keep class org.apache.cordova.CordovaWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class org.apache.cordova.DroidGap { <init>(...); }
+
